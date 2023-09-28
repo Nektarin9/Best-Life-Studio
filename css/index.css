@@ -111,7 +111,6 @@ main {
  .h2_services {
     text-align: center;
     color: #ffffff;
-    font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
     font-size: 40px;
     font-weight: 800;
     padding-top: 160px;
@@ -120,11 +119,10 @@ main {
 .p_services1 {
     text-align: center;
     color: #ffffff;
-    font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
     font-size: 20px;
     font-weight: 500;
 }
-                /* ------------------- */
+ /* ------------------- */
 
 /* Флексы */
 .container_services {
@@ -143,11 +141,12 @@ main {
     display: flex;
     justify-content: space-between;
 }
-                            /* -------------------------------- */
-/* Услуги */
+
+    
+/* Блоки с улсугами */
 
 
-                        /* размеры и цвета блоков с услугами */
+
 .block_pers_workout {
     width: 650px;
     height: 200px;
@@ -192,3 +191,7 @@ main {
     margin: 3px;
     
 }
+
+
+
+
