@@ -1,0 +1,194 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+
+/* Базовые стили */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+    /* Устанавливает фоновый цвет, который будет отображаться, пока загружается фоновое изображение */
+    font-family: "Inter", 'Times New Roman', sans-serif, Times, serif, Georgia;
+    background-color: #6e6e6e;   
+}
+::-moz-selection {
+    background-color: #b99d8a;
+    color: #ffffff;
+}
+::selection {
+    background-color: #b99d8a;
+    color: #ffffff;
+}
+img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+a, u {
+    text-decoration: none;
+  }
+
+
+  /* Шапка */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.container_header {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1800px;
+    height: 100px;
+}
+.block_logo {
+    display: flex;
+    align-items: center;
+}
+.igmp_logo {
+    width: 95px;
+    height: 80px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.h1_text {
+    font-size: 35px;
+    background-image: linear-gradient(90deg,#80ED12,#04D68D,#10DBDE,#1FDBF0,#1CF69B,#D3EB67,#FBCE29,#ED1180);
+    color: #0000;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+.svg_header {
+    cursor: pointer;
+    fill: #ffffff;
+    transition: 0.5s;
+}
+.svg_header:hover {
+    fill: #ea94ff;
+    transform: 0.5s;
+}
+.p_phone {
+    margin-right: 50px;
+}
+.a_phone {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.5s;
+}
+.a_phone:hover {
+    color: #ea94ff;
+    transform: 0.5s;
+}
+/* -----------------------------------------------*/
+
+/* Основная страница*/
+
+main {
+    width: 1800px;
+    margin: auto;
+    padding-top: 100px;
+}
+.img_main {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+ /* Параметры заголовка "Наши услуги" */
+ .h2_services {
+    text-align: center;
+    color: #ffffff;
+    font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+    font-size: 40px;
+    font-weight: 800;
+    padding-top: 160px;
+    
+}
+.p_services1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+    font-size: 20px;
+    font-weight: 500;
+}
+                /* ------------------- */
+
+/* Флексы */
+.container_services {
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+
+.flex {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex_content {
+    display: flex;
+    justify-content: space-between;
+}
+                            /* -------------------------------- */
+/* Услуги */
+
+
+                        /* размеры и цвета блоков с услугами */
+.block_pers_workout {
+    width: 650px;
+    height: 200px;
+    background-color: #1e1f1fa2;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+.block_pers_workout:hover {
+    background-color: #1e1f1fd5;
+}
+
+.img_services {
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+      
+}
+.img_services:hover {
+    transform: scale(1.1);
+}
+.scale {
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 10px;
+    border-radius: 7px 0px 0px 7px;
+}
+.p_conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.p_services {
+    text-align: center;
+    color: #ffffffe8;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 3px;
+    
+}
