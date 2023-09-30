@@ -88,7 +88,7 @@ header {
     transform: 0.5s;
 }
 .p_phone {
-    margin-right: 50px;
+    margin-right: 90px;
 }
 .a_phone {
     color: #ffffff;
@@ -100,6 +100,89 @@ header {
     color: #e4c7ff;
     transform: 0.5s;
 }
+/* Бургер меню*/
+
+#menu__toggle {
+    opacity: 0;
+  }
+ 
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    right: 0 !important;
+  }
+  .menu__btn {
+    position: absolute;
+    top: 38px;
+    right: 40px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 500px;
+    height: 100%;
+    margin: 0;
+    padding: 100px 0;
+    list-style: none;
+    background-color: #000000;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .svg_burger {
+    fill: red;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .menu__item {
+    display: flex;
+    align-items: center;
+    padding: 15px 24px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-top: 1px solid rgba(97, 96, 96, 0.596);
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #4f405f;
+  }
+
 /* -----------------------------------------------*/
 
 /* Основная страница*/
@@ -787,3 +870,25 @@ footer {
         transition: 0.4s;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
