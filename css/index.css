@@ -191,23 +191,122 @@ header {
     color: #4f405f;
     font-weight: 400;
   }
+  .container_iphone {
+    position: fixed;
+    margin: auto;
+    bottom: 50px;
+    margin-left: 15px;
+  }
+  .burger_flex {
+    display: flex;
+    gap: 10px;
+  }
+  .svg_burger_iphone {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .p_burger_phone {
+    color: #4f405f;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .p_burger_phone:hover {
+    color: #000000;
+   
+  }
+  .p_burger_iphone {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4f405f;
+  }
+ 
+  .container_burger {
+    position: fixed;  
+    width: 100%;
+    padding: 15px;
+    background-color: #6e6e6e;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .img_logo_burger {
+    width: 95px;
+    height: 80px
+  }
+  .p_logo_burger {
+    font-size: 25px;
+    background-image: linear-gradient(90deg,#80ED12,#04D68D,#10DBDE,#1FDBF0,#1CF69B,#D3EB67,#FBCE29,#ED1180);
+    color: #0000;
+    font-weight: 800;
+	-webkit-background-clip: text;
+	background-clip: text;
+  }
 
 /* -----------------------------------------------*/
+.section_img {
+    display: block;
+    margin: 0 auto;
+    padding: 100px 0 0 0;
+    width: 800px;
+}
+/* Наши плюсы*/
+
+.container_plus {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.flex_our_advantages {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+.container_our_advantages {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    width: 200px;
+    height: 140px;
+    border-radius: 8px;
+}
+.svg_our_advantages {
+    display: block;
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    fill: #4f405f;
+}
+.p_plus {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #4f405f;
+}
+
 
 /* Основная страница*/
 
 main {
     width: 1800px;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
     
 }
-.img_main {
-    display: block;
-    margin: 0 auto;
-    width: 800px;
-}
+
+
+
 
 
 
@@ -218,7 +317,7 @@ main {
     color: #ffffff;
     font-size: 40px;
     font-weight: 800;
-    padding-top: 100px;
+    padding-top: 50px;
     
 }
 .p_services1 {
@@ -411,9 +510,9 @@ footer {
 .callback-bt {
     display: block;
     position: fixed;
-    right: 8%;
-    bottom: 70px;
-    z-index: 999;
+    right: 50px;
+    bottom: 65px;
+    z-index: 1;
 }
 .callback-bt_cont {
     display: flex;
@@ -449,7 +548,7 @@ footer {
     bottom: 0;
     width: 200px;
     height: 50px;
-    z-index: 15;
+    z-index: 1;
     background-color: white;
 }
 .p_popover {
@@ -489,8 +588,8 @@ footer {
     text-align: center;
     position: fixed;
     right: 8%;
-    bottom: 70px;
-    z-index: 999;
+    bottom: 65px;
+    z-index: 1;
     transition: .3s ease-in-out;
     -webkit-animation: hoverWave linear 1s infinite;
     animation: hoverWave linear 1s infinite;
@@ -785,7 +884,7 @@ footer {
       transition: .3s ease-in-out;
     }
 
-  /* Строкb ввода */
+  /* Строка ввода */
   .conteiner_input_item {
       display: flex;
       justify-content: center;
