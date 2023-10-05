@@ -50,7 +50,8 @@ header {
     position: fixed;
     width: 100%;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: #00000013;
+    border-bottom: 1px solid #ffffff2f;
 }
 
 .container_header {
@@ -73,10 +74,9 @@ header {
 }
 .h1_text {
     font-size: 35px;
-    background-image: linear-gradient(90deg,#80ED12,#04D68D,#10DBDE,#1FDBF0,#1CF69B,#D3EB67,#FBCE29,#ED1180);
-    color: #0000;
-	-webkit-background-clip: text;
-	background-clip: text;
+    font-weight: 800;
+    color: #ffffff;
+	
 }
 .svg_header {
     cursor: pointer;
@@ -247,11 +247,19 @@ header {
   }
 
 /* -----------------------------------------------*/
+
 .section_img {
-    display: block;
-    margin: 0 auto;
-    padding: 100px 0 0 0;
-    width: 800px;
+    height: auto;
+    width: 100%;
+    max-width: 1000px;
+    object-fit: contain; 
+}
+/* О нас*/
+.container_about_us {
+    border-top: 2px solid white;
+    background-color: #6e6e6e;
+    height: 300px;
+    width: 100%;
 }
 /* Наши плюсы*/
 
@@ -358,6 +366,8 @@ main {
     margin-top: 100px;
     margin-bottom: 20px;
     border-radius: 7px;
+    box-shadow: 0px 5px 10px 0px #4f405f
+
 }
 
 
@@ -396,6 +406,22 @@ main {
 
 
  /* ------------------------------------- */
+ /*Отзывы */
+.container_reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    background-color: white;
+    height: 300px;
+}
+.img_reviews {
+    width: 220px;
+    height: 200px;
+}
+ /* ------------------------------------- */
 
 
 /* Подвал */
@@ -403,46 +429,9 @@ main {
 footer {
     width: 100%;
     margin: auto;
-    height: 400px;
     background-color: #000000;
 }
-/* Отзывы */
-.container_reviews {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-.cont_zoom_google {
-    margin-top: 20px;
-}
-.img_zoom {
-    margin-top: 15px;
-    display: block;
-    border-radius: 8px;
-    width: 210px;
-    height: 40px;
-}
-.img_google {
-    margin: auto;
-    margin-top: 15px;
-    display: block;
-    
-    border-radius: 8px;
-    width: 210px;
-    height: 40px;
-}
-.reviews {
-    width:400px;
-    height:120px;
-    overflow:hidden;
-    position:relative; 
-    margin: 0 auto; 
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-top: 40px;
-}
+
 
 .container_footer {
     display: flex;
