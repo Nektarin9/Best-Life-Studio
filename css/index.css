@@ -10,9 +10,8 @@
 }
 /* О нас*/
 .container_about_us {
-    border-top: 2px solid white;
     background-color: #6e6e6e;
-    height: 300px;
+    height: 200px;
     width: 100%;
 }
 /* Наши плюсы*/
@@ -39,14 +38,14 @@
     justify-content: center;
     margin: 10px 0 10px 0;
     width: 200px;
-    height: 140px;
+    height: 100%;
     border-radius: 8px;
 }
 .svg_our_advantages {
     display: block;
     margin: auto;
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     fill: #4f405f;
 }
 .p_plus {
@@ -64,7 +63,6 @@ main {
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    
 }
 
 
@@ -77,16 +75,16 @@ main {
  .h2_services {
     text-align: center;
     color: #ffffff;
+    font-family: 'spaceranger-rus';
+    letter-spacing: 2.5px;
     font-size: 40px;
-    font-weight: 800;
-    padding-top: 50px;
-    
+    font-weight: 400;
 }
 .p_services1 {
     text-align: center;
     color: #ffffff;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
 }
  /* ------------------- */
 
@@ -111,17 +109,14 @@ main {
     
 /* Блоки с улсугами */
 
-
-
 .block_pers_workout {
     width: 650px;
     height: 200px;
     background-color: #4f405f;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 7px;
     box-shadow: 0px 5px 10px 0px #4f405f
-
 }
 
 
@@ -152,10 +147,10 @@ main {
     text-align: center;
     color: #ffffffe8;
     font-style: normal;
-    font-size: 18px;
-    font-weight: 800;
-    margin: 3px;
-    
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 5px;
 }
 
 
@@ -169,16 +164,14 @@ main {
     gap: 50px;
     width: 100%;
     background-color: white;
-    height: 300px;
+    padding: 15px 0px 15px 0px;
+    height: auto;
 }
 .img_reviews {
     width: 220px;
     height: 200px;
 }
-.img_2gis {
-    width: 125px;
-    height: 50px;
-}
+
  
 
 
@@ -189,26 +182,225 @@ main {
 
 
 @media (max-width:1800px) {
-    
+    .section_img {
+        max-height: 700px;
+        background-image: url(../igmp/Основатели.jpeg);
+    }
+    main {
+        width: 1200px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    /* Параметры заголовка "Наши услуги" */
+    .h2_services {
+        font-size: 30px;
+    }
+    .p_services1 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .block_pers_workout {
+        width: 500px;
+    }
+     /*Отзывы */
+    .container_reviews {
+        gap: 50px;
+        height: 200px;
+    }
+    .img_reviews {
+        width: 146px;
+        height: 150px;
+    }
+   
 }
 
 @media (max-width:1200px) {
-    
+    .section_img {
+        max-height: 500px;
+        background-image: url(../igmp/Основатели.jpeg);
+    }
+    /* Наши плюсы*/
+    .flex_our_advantages {
+        max-width: 100%;
+        padding: 20px;
+        gap: 15px;
+        
+    }
+    .container_our_advantages {
+        margin: 5px 0 5px 0;
+        width: 150px;
+    }
+    .svg_our_advantages {
+        width: 50px;
+        height: 50px;
+    }
+    .p_plus {
+        font-size: 14px;
+    }
+    main {
+        width: 100%;
+    }
+    /* Параметры заголовка "Наши услуги" */
+    .h2_services {
+        font-size: 30px;
+    }
+    .p_services1 {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+    .container_services {
+        max-width: 100%;
+    }
+    .block_pers_workout {
+        margin: 35px 0px 0px 0px;
+        width: 90%;
+    }
+     /*Отзывы */
+    .container_reviews {
+        gap: 50px;
+        height: auto;
+    }
 }
 
 @media (max-width:800px) {
-    
+    .section_img {
+        max-height: 400px;
+    }
+    /* Наши плюсы*/
+    .flex_our_advantages {
+        max-width: 100%;
+        padding: 20px;
+        gap: 15px;
+        
+    }
+    .container_our_advantages {
+        margin: 5px 0 5px 0;
+        width: 150px;
+    }
+    .svg_our_advantages {
+        width: 50px;
+        height: 50px;
+    }
+    .p_plus {
+        font-size: 14px;
+    }
+    main {
+        width: 100%;
+    }
+    /* Параметры заголовка "Наши услуги" */
+    .h2_services {
+        font-size: 30px;
+    }
+    .p_services1 {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+    .container_services {
+        max-width: 100%;
+    }
+    .block_pers_workout {
+        margin: 35px 0px 0px 0px;
+        width: 90%;
+    }
+     /*Отзывы */
+    .container_reviews {
+        gap: 50px;
+        height: auto;
+    }
+    .img_reviews {
+        width: 146px;
+        height: 150px;
+    }
 }
 
 @media (max-width:500px) {
-    
+     /* Наши плюсы*/
+     .flex_our_advantages {
+        max-width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+    .container_our_advantages {
+        margin: 5px 0 5px 0;
+        width: 150px;
+    }
+    .svg_our_advantages {
+        width: 50px;
+        height: 50px;
+    }
+    .p_plus {
+        font-size: 14px;
+    }
+    main {
+        width: 100%;
+    }
+    .flex_our_advantages {
+        padding: 10px 0 10px 0;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    /* Параметры заголовка "Наши услуги" */
+    .h2_services {
+        font-size: 25px;
+    }
+    .p_services1 {
+        font-size: 14px;
+        padding-bottom: 0px;
+    }
+    .container_services {
+        max-width: 100%;
+    }
+    .block_pers_workout {
+        margin: 35px 0px 0px 0px;
+        width: 97%;
+        height: 150px;
+    }
+    .img_services {
+        width: 150px;
+        height: 150px;
+        transition: 1s;
+          
+    }
+    .scale {
+        max-width: 150px;
+        max-height: 150px;
+        margin-right: 5px;
+    }
+    .p_services {
+        font-size: 18px;
+        line-height: 30px;
+    }
+     /*Отзывы */
+    .container_reviews {
+        gap: 50px;
+        height: auto;
+    }
+    .img_reviews {
+        width: 122px;
+        height: 125px;
+    }
 }
 @media (max-width:400px) {
-    
+    .p_services {
+        font-size: 14px;
+        line-height: 26px;
+    }
 }
 
 @media (max-width:360px) {
-   
+   /* Наши плюсы*/
+   .flex_our_advantages {
+    padding: 10px;
+    gap: 10px;
+    }
+    .container_our_advantages {
+        margin: 5px 0 5px 0;
+        max-width: 110px;
+    }
+    .svg_our_advantages {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 

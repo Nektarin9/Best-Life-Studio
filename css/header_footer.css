@@ -58,6 +58,7 @@ header {
     height: 100px;
     background-color: #00000013;
     border-bottom: 1px solid #ffffff2f;
+    z-index: 10;
 }
 
 .container_header {
@@ -162,7 +163,7 @@ header {
     width: 500px;
     height: 100%;
     margin: 0;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     list-style: none;
     background-color: #ffffff;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
@@ -193,11 +194,11 @@ header {
     font-size: 24px;
     color: #4f405f;
     font-weight: 400;
+    
   }
+ 
   .container_iphone {
-    position: fixed;
-    margin: auto;
-    bottom: 50px;
+    margin: 100px auto;
     margin-left: 15px;
   }
   .burger_flex {
@@ -207,7 +208,7 @@ header {
   .svg_burger_iphone {
     width: 40px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 9px;
   }
   .p_burger_phone {
     color: #4f405f;
@@ -245,8 +246,8 @@ header {
     background-image: linear-gradient(90deg,#80ED12,#04D68D,#10DBDE,#1FDBF0,#1CF69B,#D3EB67,#FBCE29,#ED1180);
     color: #0000;
     font-weight: 800;
-	-webkit-background-clip: text;
-	background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 
 
@@ -331,7 +332,7 @@ footer {
     position: fixed;
     right: 50px;
     bottom: 65px;
-    z-index: 1;
+    z-index: 15;
 }
 .callback-bt_cont {
     display: flex;
@@ -402,13 +403,13 @@ footer {
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid transparent;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     text-align: center;
     position: fixed;
-    right: 15px;
-    bottom: 25px;
-    z-index: 1;
+    right: 20px;
+    bottom: 35px;
+    z-index: 15;
     transition: .3s ease-in-out;
     -webkit-animation: hoverWave linear 1s infinite;
     animation: hoverWave linear 1s infinite;
@@ -882,10 +883,11 @@ footer {
        /* Подвал */
     .container_footer {
         gap: 10px;
-        width: 800px;
+        width: 750px;
     }
     .container_footer_block {
         width: 210px;
+
     }
 }
 
@@ -911,35 +913,39 @@ footer {
     /* Кнопка бокового меню */
     .menu__btn {
         top: 23px;
-        right: 5px;
+        right: 12px;
       }
       .menu__box {
         right: -300%;
         width: 100%;
-        padding: 70px 0;
+        padding: 70px 0 0 0;
+      }
+      .container_iphone {
+        margin: 50px auto;
+        margin-left: 15px;
       }
       .menu__item {
-        padding: 10px 24px;
+        padding: 10px 10px;
       }
       .p_burger  { 
-        font-size: 17px;
+        font-size: 14px;
       }
       /* Подвал */
     .container_footer {
       gap: 10px;
       width: 100%;
-      padding: 35px 5px 35px 5px;
+      padding: 35px 0px 35px 0px;
   }
-  .container_footer_block {
-    width: 90%;
-  }
+    .container_footer_block {
+      width: 90%;
+    }
 
-  .callback-bt {
-    display: none;
-  }
-  .callback-bt-mobile {
-    display: block;
-  }
+    .callback-bt {
+      display: none;
+    }
+    .callback-bt-mobile {
+      display: block;
+    }
 }
 
 @media (max-width:500px) {
