@@ -1,10 +1,11 @@
+.section_container {
+    height: 100%;
+}
 .container_table_price {
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 1800px;
-    height: 100%;
+    padding-top: 350px;
     gap: 30px;
 }
 .block_price {
@@ -128,6 +129,46 @@
     font-weight: 400;
     color: #727171;
 }
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+.container_table_price {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    align-items: start;
+    
+    gap: 30px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -11,10 +11,7 @@ Options.forEach(function(element, index) {
 });
 targetElement.classList.add('active');
 }
-
-
 // Логика кнопок, блок "Прайс"
-
 // Чекбокс
 const vip_checkbox = document.querySelector(".toggle-checkbox")
 // Кнопки
@@ -39,7 +36,6 @@ const price_vip = {
 }
 // Номер нажатой кнопки
 let counter = 0
-
 // Логика чекбокса
 function checkbox() {
     vip_checkbox.addEventListener("change", event => {
@@ -48,11 +44,9 @@ function checkbox() {
         if (vip_checkbox.checked === false) {
             p_price.textContent = price.first_training
             block_price(counter)
-        }
-        
+        }   
     })
 }
-
 // Рисуем прайс
 function block_price(i) {
     let x = price
