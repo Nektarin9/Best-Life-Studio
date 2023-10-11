@@ -12,6 +12,12 @@
 * {
 	margin: 0;
 	padding: 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none
 }
 body {
     position: relative;
@@ -29,6 +35,17 @@ html {
     margin: auto;
     overflow-y: scroll;
     scroll-behavior: smooth;
+}
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+ul {
+  margin-left: 0;
+  /* Отступ слева в браузере IE и Opera */
+  padding-left: 0;
+  /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 ::-moz-selection {
     background-color: #4f405f;
@@ -208,7 +225,7 @@ header {
   .svg_burger_iphone {
     width: 40px;
     height: 40px;
-    border-radius: 9px;
+    border-radius: 10px;
   }
   .p_burger_phone {
     color: #4f405f;
@@ -218,7 +235,6 @@ header {
   }
   .p_burger_phone:hover {
     color: #000000;
-   
   }
   .p_burger_iphone {
     text-align: center;
@@ -258,11 +274,18 @@ header {
 /* Подвал */
 
 footer {
+    position: relative;
+    height: auto;
     width: 100%;
     margin: auto;
     background-color: #000000;
 }
-
+.container_footer_position {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #000000;
+}
 
 .container_footer {
     display: flex;
@@ -577,47 +600,36 @@ footer {
     /* формируем кнопку закрытия */
     .close {
     position: absolute;
-    top: -10px;
-    right: -10px;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ccc;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
-    background-color: rgba(61, 61, 61, 0.8);
-    -webkit-box-shadow: 0px 0px 10px #000;
-    -moz-box-shadow: 0px 0px 10px #000;
-    box-shadow: 0px 0px 10px #000;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    line-height: 20px;
-    /* задаём значения и эффект перехода при наведении */
-    -webkit-transition: all ease .8s;
-    -moz-transition: all ease .8s;
-    -ms-transition: all ease .8s;
-    -o-transition: all ease .8s;
-    transition: all ease .8s;
+    top: 15px;
+    right: -16px;
     }
-    .close:before {
-    color: rgba(255, 255, 255, 0.9);
-    content: "X";
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
-    font-size: 12px;
-    }
-    .close:hover {
-    background-color: #4f405f;
-    /* крутим кнопку при наведении */
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);    
-    }
+    .cl-btn-2 {
+      display: flex;
+      justify-content: center;
+  }
+  .cl-btn-2 div {
+      cursor: pointer;
+      position: relative;  
+      height: 20px;
+      width: 50px;
+  }
+  .cl-btn-2 .leftright {
+      height: 4px;
+      width: 30px;
+      position: absolute;
+      background-color: #ffffff;
+      transform: rotate(45deg);
+  }
+  .cl-btn-2 .rightleft {
+      height: 4px;
+      width: 30px;
+      position: absolute;
+      background-color: #ffffff;
+      transform: rotate(-45deg);
+  }
+
+  
+   
  .form_flex {
     display: flex;
     align-items: center;
@@ -645,44 +657,35 @@ footer {
 
     /* button */
     
-    .shine-button1 {
-      text-decoration: none;
-      display: inline-block;
-      padding: 20px 30px;
-      margin: 15px 20px;
-      position: relative;
-      overflow: hidden;
-      background-color: #000000;
-      border: 2px solid #fe6637;
-      border-radius: 5px;
-      font-size: 30px;
-      font-family: 'Montserrat', sans-serif;
-      color: #fe6637;
-      transition: .2s ease-in-out;
+             
+    .btn-grad {
+      background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
+      padding: 18px 55px;
+      text-align: center;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 400;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;            
+      border-radius: 10px;
+      border: none;
+      display: block;
     }
-    .shine-button1:before {
-      content: "";
-      background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
-      height: 88px;
-      width: 50px;
-      position: absolute;
-      top: -8px;
-      left: -85px;
-      transform: skewX(-45deg);
-    }
-    .shine-button1:hover {
-      background: #fe6637;
+
+    .btn-grad:hover {
+      background-position: right center; /* change the direction of the change here */
       color: #fff;
+      text-decoration: none;
     }
-    .shine-button1:hover:before {
-      left: 180px;
-      transition: .3s ease-in-out;
-    }
+   
 
   /* Строка ввода */
   .conteiner_input_item {
       display: flex;
       justify-content: center;
+      align-items: center;
       margin-top: 40px;
       
   }
@@ -914,6 +917,14 @@ footer {
     .menu__btn {
         top: 23px;
         right: 12px;
+      }
+      .p_burger_phone {
+        font-size: 16px;
+      }
+      .svg_burger_iphone {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
       }
       .menu__box {
         right: -300%;
