@@ -890,7 +890,10 @@ footer {
     }
     .container_footer_block {
         width: 210px;
-
+    }
+     
+     .container_footer_position {
+      position: static;
     }
 }
 
@@ -957,6 +960,7 @@ footer {
     .callback-bt-mobile {
       display: block;
     }
+    
 }
 
 @media (max-width:500px) {
@@ -964,6 +968,7 @@ footer {
     .container_header {
         width: 400px;
     }
+   
 }
 @media (max-width:400px) {
     /* Шапка */
