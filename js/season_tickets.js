@@ -1,16 +1,21 @@
 // Активные кнопки
-let Options = document.querySelectorAll('.button_price');
-Options.forEach(function(element, index) {
-element.addEventListener('click', switchLanguage);
-});
-function switchLanguage (event) {
-let targetElement = event.target;
-
-Options.forEach(function(element, index) {
-    element.classList.remove('active');
-});
-targetElement.classList.add('active');
+function button_active(selector) {
+    let Options = document.querySelectorAll(selector);
+    Options.forEach(function(element, index) {
+    element.addEventListener('click', switchLanguage);
+    });
+    function switchLanguage (event) {
+    let targetElement = event.target;
+    Options.forEach(function(element, index) {
+        element.classList.remove('active');
+    });
+    targetElement.classList.add('active');
+    }
 }
+button_active('.button_price')
+button_active('.container_button_person')
+
+
 // Логика кнопок, блок "Прайс"
 // Чекбокс
 const vip_checkbox = document.querySelector(".toggle-checkbox")
@@ -20,6 +25,45 @@ const btn = document.querySelectorAll(".button_price")
 const p_price = document.getElementById("price")
 // Блок с прайсом абонементов
 const block_subscription = document.getElementById("block_subscription")
+// Блок с командой
+const person = document.querySelector(".container_person")
+
+function person_block() {
+    if (vip_checkbox.checked === true) {
+        person.innerHTML = `<a href="#4">
+        <button style="background-image: url(../igmp/person4.svg);" class="container_button_person">
+            <p class="p_name">Антон</p>
+        </button>
+    </a>
+    <a href="#5">
+        <button style="background-image: url(../igmp/person5.svg);" class="container_button_person">
+            <p class="p_name">Анастасия</p>
+        </button>
+    </a>
+    <a href="#6">
+        <button style="background-image: url(../igmp/person6.svg);" class="container_button_person">
+            <p class="p_name">Андрей</p>
+        </button>
+    </a>`
+    }
+    else {
+        person.innerHTML = `<a href="#1">
+        <button style="background-image: url(../igmp/person1.svg);" class="container_button_person">
+            <p class="p_name">Александр</p>
+        </button>
+        </a>
+        <a href="#2">
+        <button style="background-image: url(../igmp/person2.svg);" class="container_button_person">
+            <p class="p_name">Екатерина</p>
+        </button>
+        </a>
+        <a href="#3">
+        <button style="background-image: url(../igmp/person3.svg);" class="container_button_person">
+            <p class="p_name">Денис</p>
+        </button>
+        </a>`
+    }
+}
 // прайс
 const price = {
     first_training: "2500 ₽",
@@ -41,9 +85,14 @@ function checkbox() {
     vip_checkbox.addEventListener("change", event => {
         p_price.textContent = price_vip.first_training
         block_price(counter)
+        person_block()
+
+
         if (vip_checkbox.checked === false) {
             p_price.textContent = price.first_training
             block_price(counter)
+            person_block()
+
         }   
     })
 }
@@ -80,6 +129,7 @@ function button() {
     }
 }
 block_price(0)
+person_block()
 checkbox()
 button()
 
