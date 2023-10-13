@@ -5,7 +5,7 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    padding-top: 350px;
+    padding-top: 200px;
     gap: 30px;
 }
 .block_price {
@@ -186,7 +186,6 @@
 
 
 
-
 /* Модальные окна */
 
 .form_person {
@@ -306,10 +305,10 @@
 @media (max-width:1200px) {
   .section_container {
     height: auto;
-    margin-bottom: 500px;
+    margin-bottom: 400px;
   }
   .container_table_price {
-      padding-top: 200px;  
+      padding-top: 100px;  
   }
 }
 
@@ -374,6 +373,7 @@
     margin-top: 50px;
     font-size: 18px;
   }
+  
   /* Модальные окна */
   .form_person {
     padding: 10px;
