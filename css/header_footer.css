@@ -30,6 +30,8 @@ body {
     scroll-behavior: smooth; 
     scrollbar-width: thin; 
     scrollbar-color: #4f405f ;
+    overflow: auto;
+
     
 }
 

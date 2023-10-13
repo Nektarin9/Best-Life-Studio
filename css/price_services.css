@@ -184,21 +184,21 @@
 
 
 
-.form_person::-webkit-scrollbar {
-  width: 10px;
-}
 
-.form_person::-webkit-scrollbar-thumb {
-  background-color: #4f405f;
-  border-radius: 5px;
-}
 
 
 /* Модальные окна */
+
 .form_person {
   padding: 20px;
   margin: 20px 0 0 0;
-  overflow-y: auto;
+  max-height: 700px;
+  --lms_scrollpath_bg: #5c5c5c73;
+  --lms_scrollbar_bg: #c9c9c9;
+  --lms_scrollbar_radius: 5px;
+  --lms_scrollpath_radius: 5px;
+}
+.scroll_container {
   max-height: 700px;
 }
 .img_person {
@@ -300,7 +300,6 @@
   visibility: visible;
   opacity: 1; /* убираем прозрачность */
   }
-
 
 
 
@@ -454,7 +453,7 @@
   }
     /* Модальные окна */
   .form_person {    
-    padding: 0;
+    padding: 20px 1px 0 0;
     margin: 0;
     
     height: 610px;
@@ -504,7 +503,7 @@
     line-height: 24px;
     margin: 5px 0 5px 0;
   }
-  
+ 
   
 }
 

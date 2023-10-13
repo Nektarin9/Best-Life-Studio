@@ -27,6 +27,7 @@ const p_price = document.getElementById("price")
 const block_subscription = document.getElementById("block_subscription")
 // Блок с командой
 const person = document.querySelector(".container_person")
+let img_person = document.querySelectorAll(".container_person > a")
 
 function person_block() {
     if (vip_checkbox.checked === true) {
@@ -45,6 +46,7 @@ function person_block() {
             <p class="p_name">Андрей</p>
         </button>
     </a>`
+
     }
     else {
         person.innerHTML = `<a href="#1">
@@ -63,6 +65,9 @@ function person_block() {
         </button>
         </a>`
     }
+    img_person = document.querySelectorAll(".container_person > a")
+    body_hidden()
+    
 }
 // прайс
 const price = {
@@ -128,8 +133,34 @@ function button() {
         })
     }
 }
+
+
 block_price(0)
 person_block()
 checkbox()
 button()
+body_hidden()
 
+// Запрещаем скролить фоновую страницу при открытии модального окна
+const body = document.body
+const modal = document.querySelectorAll(".modal_person")
+const close_modal = document.querySelectorAll(".close")
+const overlay_person = document.querySelectorAll(".overlay_person")
+function body_hidden() {
+    for (let i = 0; i < img_person.length; i++) {
+        img_person[i].addEventListener("click", event => {
+            body.style.overflow = "hidden"
+        })
+    }
+}
+function body_auto() {
+    for (let i = 0; i < modal.length; i++) {
+        close_modal[i].addEventListener("click", event => {
+            body.style.overflow = "auto"
+        })
+        overlay_person[i].addEventListener("click", event => {
+            body.style.overflow = "auto"
+        })
+    }
+}
+body_auto()
