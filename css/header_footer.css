@@ -31,9 +31,11 @@ body {
     scrollbar-width: thin; 
     scrollbar-color: #4f405f ;
     overflow: auto;
+    
 
     
 }
+
 
 body::-webkit-scrollbar {
   width: 10px;
@@ -301,12 +303,7 @@ footer {
     margin: auto;
     background-color: #000000;
 }
-.container_footer_position {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  background-color: #000000;
-}
+
 
 .container_footer {
     display: flex;
@@ -912,9 +909,7 @@ footer {
         width: 210px;
     }
      
-     .container_footer_position {
-      position: static;
-    }
+    
 }
 
 @media (max-width:800px) {
@@ -1006,3 +1001,5 @@ footer {
         width: 320px;
     }
 }
+
+
