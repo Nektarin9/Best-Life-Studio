@@ -11,6 +11,9 @@ footer {
   flex-grow: 0;
 }
 
+.show_price_tattoo {
+  display: none;
+}
 .section_container {
     height: 100%;
     margin-bottom: 20px;

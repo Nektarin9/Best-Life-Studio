@@ -265,13 +265,83 @@ footer {
 
 
  
+.show_price_makeup {
+  display: block;
+}
+.show_price_tattoo {
+  display: none;
+}
 
 
 
+/* Модальные окна */
+
+.form_person img {
+  width: 100%; 
+  max-width: 650px; 
+  height:min-content;
+  border-radius: 10px;
+}
+
+/*** Формируем стили модального окна ***/
+.overlay_person {
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  /* фон затемнения */
+  background-color: rgba(0, 0, 0, 0.562);
+  opacity: 0;
+  position: fixed; /* фиксированное поцизионирование */
+  cursor: default; /* тип курсара */
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+  }
+  .overlay_person:target {
+  visibility: visible;
+  opacity: 1;
+  }
 
 
+.modal_person {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  margin: 0 auto;
+  width: 100%; 
+  max-width: 650px; 
+  
 
-
+  /* фиксированное позиционирование, окно стабильно при прокрутке */
+  position: fixed;
+  /* скругление углов */
+  border-radius: 10px;
+ 
+  /* полная прозрачность окна, появление при клике */
+  opacity: 0;
+  /* эффект перехода (появление) */
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+  }
+  /* активируем появление окна и затемнение фона */
+  .overlay_person:target+.modal_person {
+  top: 9%; /* положение окна от верха страницы при появлении */
+  visibility: visible;
+  opacity: 1; /* убираем прозрачность */
+  }
 
 
 
@@ -334,9 +404,7 @@ footer {
     font-size: 18px;
   }
   /* Модальные окна */
-  .form_person {
-    padding: 10px;
-  }
+  
   .modal_person {
     width: 90%;
   }
@@ -381,7 +449,7 @@ footer {
       right: 5px;
   }
   
-  
+ 
   
 }
 
@@ -455,15 +523,8 @@ footer {
     gap: 20px;
   }
     /* Модальные окна */
-  .form_person {    
-    padding: 20px 1px 0 0;
-    margin: 0;
-    
-    height: 610px;
-  }
-  .modal_person {
-    width: 85%;
-  }
+ 
+  
   /* активируем появление окна и затемнение фона */
   .overlay_person:target+.modal_person {
     top: 2%; /* положение окна от верха страницы при появлении */
@@ -489,6 +550,7 @@ footer {
     letter-spacing: 1.2px;
     line-height: 30px;
   }
+  
   .h3_modal {
     text-align: center;
     color: white;
@@ -536,6 +598,16 @@ footer {
     height: 30px;
     right: 9px;
   }
+  /* Для вертикальных фотографий */
+  .vertical_photo {
+    max-height: 400px;
+  }
+  /* активируем появление окна и затемнение фона */
+  .overlay_person:target+.modal_person {
+    top: 20%; /* положение окна от верха страницы при появлении */
+    visibility: visible;
+    opacity: 1; /* убираем прозрачность */
+    }
 }
 
 @media (max-width:360px) {

@@ -3,15 +3,18 @@ const btn = document.querySelectorAll(".button_price")
 // Блок в котором отображаем прайс выбранной услуги
 const show_price = document.getElementById("show_price")
 // Слайдер
-const slider = document.querySelector(".swiper-wrapper")
+const slider_makeup = document.getElementById("show_price_makeup")
+const slider_tattoo = document.getElementById("show_price_tattoo")
 
 let counter = 0
+slider_makeup.style.display = "none"
+
 
 for (let i = 0; i < btn.length; i++) {
-    btn[i].addEventListener("click", event => {
-        counter = i
-        show_content()
-    })
+btn[i].addEventListener("click", event => {
+    counter = i
+    show_content()
+})
 }
 
 function show_content() {
@@ -53,16 +56,8 @@ function show_content() {
             <p class="p_makeup_price1">7000 ₽</p>
         </div>
     </div>`
-    slider.innerHTML = `<div class="swiper-slide"><img src="../igmp/makeup1.jpg" alt="makeup"></div>
-    <div class="swiper-slide"><img src="../igmp/makeup2.jpg" alt="makeup"></div>
-    <div class="swiper-slide"><img src="../igmp/makeup3.jpg" alt="makeup"></div>
-    <div class="swiper-slide"><img src="../igmp/makeup4.jpg" alt="makeup"></div>
-    <div class="swiper-slide"><img src="../igmp/makeup5.jpg" alt="makeup"></div>
-    <div class="swiper-slide"><img src="../igmp/makeup6.jpg" alt="makeup"></div>
-    <div class="swiper-slide"><img src="../igmp/makeup7.jpg" alt="makeup"></div>
-    <div class="swiper-slide"><img src="../igmp/makeup8.jpg" alt="makeup"></div>
-    <div class="swiper-slide"><img src="../igmp/makeup9.jpg" alt="makeup"></div>
-    <div class="swiper-slide"><img src="../igmp/makeup10.jpg" alt="makeup"></div>`
+    slider_makeup.style.display = "block"
+    slider_tattoo.style.display = "none"
     }
     else {
         show_price.innerHTML = `<div class="flex_p_price">
@@ -77,25 +72,72 @@ function show_content() {
         <p class="first_training">Консультация и разработка эскиза -</p>
         <p id="price" class="price">бесплатно</p>
     </div>`
-    slider.innerHTML = `<div class="swiper-slide"><img src="../igmp/tattoo1.jpg" alt="tattoo"></div>
-    <div class="swiper-slide"><img src="../igmp/tattoo2.jpg" alt="tattoo"></div>
-    <div class="swiper-slide"><img src="../igmp/tattoo3.jpg" alt="tattoo"></div>
-    <div class="swiper-slide"><img src="../igmp/tattoo4.jpg" alt="tattoo"></div>
-    <div class="swiper-slide"><img src="../igmp/tattoo5.jpg" alt="tattoo"></div>
-    <div class="swiper-slide"><img src="../igmp/tattoo6.jpg" alt="tattoo"></div>
-    <div class="swiper-slide"><img src="../igmp/tattoo7.jpg" alt="tattoo"></div>
-    <div class="swiper-slide"><img src="../igmp/tattoo8.jpg" alt="tattoo"></div>
-    <div class="swiper-slide"><img src="../igmp/tattoo9.jpg" alt="tattoo"></div>
-    <div class="swiper-slide"><img src="../igmp/tattoo10.jpg" alt="tattoo"></div>`
+    slider_makeup.style.display = "none"
+    slider_tattoo.style.display = "block"
     }
 }
 
 
+
+const photo_modal = document.querySelector(".form_person")
+
+const makeup_photo = document.querySelectorAll("#makeup > img")
+const tattoo_photo = document.querySelectorAll("#tattoo > img")
+
+
+for (let i = 0; i < makeup_photo.length; i++) {
+    makeup_photo[i].addEventListener("click", event => {
+        photo_modal.innerHTML = makeup_photo[i].outerHTML
+    })
+}
+for (let i = 0; i < tattoo_photo.length; i++) {
+    tattoo_photo[i].addEventListener("click", event => {
+        photo_modal.innerHTML = tattoo_photo[i].outerHTML
+        body.style.overflow = "hidden"
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 show_content()
+let img_person = document.querySelectorAll(".swiper-slide > a")
 
-
-
-
+// Запрещаем скролить фоновую страницу при открытии модального окна
+const body = document.body
+const modal = document.querySelectorAll(".modal_person")
+const close_modal = document.querySelectorAll(".close")
+const overlay_person = document.querySelectorAll(".overlay_person")
+function body_hidden() {
+    for (let i = 0; i < img_person.length; i++) {
+        img_person[i].addEventListener("click", event => {
+            body.style.overflow = "hidden"
+        })
+    }
+}
+function body_auto() {
+    for (let i = 0; i < modal.length; i++) {
+        close_modal[i].addEventListener("click", event => {
+            body.style.overflow = "auto"
+        })
+        overlay_person[i].addEventListener("click", event => {
+            body.style.overflow = "auto"
+        })
+    }
+}
+body_hidden()
+body_auto()
 
 // Слайдер
 const swiper = new Swiper('.swiper', {
@@ -112,3 +154,6 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-left',
     }
   });
+
+
+
