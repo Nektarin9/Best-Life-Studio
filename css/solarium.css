@@ -61,30 +61,7 @@ footer {
   font-size: 22px;
   font-weight: 600;
 }
-.container_block_input {
-  max-width: 400px;
-  margin-bottom: 10px;
-}
-.recommendation {
-  font-size: 16px;
-  font-weight: 400;
-  color: #4f405f;
-  text-align: center;
-}
 
-.container_recommendation_scale {
-  margin: 10px 0 10px 0;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-.recommendation_scale {
-  width: 8px;
-  height: 20px;
-  border-radius: 10px;
-  border: 1px solid #4f405f;
-  
-}
 
 
  /* Блок с абонементами */
@@ -357,7 +334,7 @@ footer {
   visibility: hidden;
   margin: 0 auto;
   max-width: 500px; 
-  width: 100%;  
+  width: 100%;
 
   /* фиксированное позиционирование, окно стабильно при прокрутке */
   position: fixed;
@@ -385,9 +362,14 @@ footer {
 
 
 @media (max-width:1800px) {
- 
   .container_table_price {
       padding-top: 90px;  
+  }
+  .form_person img {
+    max-width: 460px; 
+  }
+  .modal_person {
+    max-width: 460px; 
   }
 }
   
@@ -416,10 +398,19 @@ footer {
   .first_training {
       font-size: 16px;
   }
+  .old_price {
+    font-size: 18px;
+}
   .price {
       font-size: 20px;
   }
+  .price2 {
+    font-size: 20px;
+}
 
+  .span_old_price {
+    top: 10px;
+  }
  
   .container_button_person {
     margin: 10px 10px 20px 10px;
@@ -437,7 +428,7 @@ footer {
 
   .button_price {
     width: 200px;
-    height: 60px;
+    height: 40px;
     font-size: 18px;
   }
   /* Модальные окна */
@@ -450,31 +441,10 @@ footer {
     height: 226px;
     margin: 0 5px 5px 0;
   }
-  /* Блок макияжа и татуажа */
-  .container_makeup {
-    margin: 20px auto;
-    width: 450px;
-    
-  }
-  .p_makeup {
-    margin: 10px 0 0 0;
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .p_makeup_price {
-    font-size: 14px;
-  }
-  .p_makeup_price1 {
-    font-size: 14px;
-  }
-    
-  
-  .container_makeup_price {
-    padding: 7px 0px 7px 5px;
-  }
+ 
   /* Слайдер */
   .swiper {
-    width: 100%;
+    width: 70%;
     height: 420px;
   }
   .swiper-button-left {
@@ -509,12 +479,15 @@ footer {
 }
  
 /* Кнопки */
-
+.button_container {
+  gap: 10px;
+}
 
 .button_price {
-  width: 140px;
-  height: 60px;
-  font-size: 16px;
+  width: 48%;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
 }
 /* Блок макияжа и татуажа */
 .container_makeup {
@@ -532,7 +505,7 @@ footer {
     gap: 20px;
   }
   .span_dash {
-    top: -2px;
+    top: -15px;
     left: -17px;
     font-size: 40px;
   }
@@ -605,17 +578,17 @@ footer {
  
     /* Слайдер */
   .swiper {
-    width: 100%;
-    height: 340px;
+    width: 320px;
+    height: 360px;
   }
   .swiper-button-left {
-    top: 155px;
+    top: 160px;
     left: 3px;
     width: 40px;
     height: 40px;
   }
   .swiper-button-right {
-      top: 155px;
+      top: 160px;
       right: 3px;
       width: 40px;
       height: 40px;
@@ -636,7 +609,7 @@ footer {
   
   /* активируем появление окна и затемнение фона */
   .overlay_person:target+.modal_person {
-    top: 20%; /* положение окна от верха страницы при появлении */
+    top: 10%; /* положение окна от верха страницы при появлении */
     visibility: visible;
     opacity: 1; /* убираем прозрачность */
     }
@@ -648,7 +621,10 @@ footer {
   .block_price {
     padding: 8px;
   }
-  
+  .swiper {
+    width: 100%;
+   
+  }
 }
 
 

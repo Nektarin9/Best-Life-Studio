@@ -44,43 +44,6 @@ show_content()
 
 
 
-// Логика инпут range
-
-// Цена
-const price_input = document.getElementById("price")
-// input_range
-const input_range = document.getElementById("range")
-// Текст рекомендации
-const  minutes = document.getElementById("minutes")
-// Шкала рекомендации
-const scale = document.querySelectorAll(".container_recommendation_scale > .recommendation_scale")
-// Текст рекомендации
-const recommendation = document.getElementById("recommendation")
-
-function prices_minutes() {
-    price_input.textContent = input_range.valueAsNumber * price_solarium.price_min + ` ` + `₽`
-    minutes.textContent = input_range.valueAsNumber + ` ` + `мин`
-    return input_range.valueAsNumber
-}
-
-function scale_block(min) {
-    if (min <= 2) {
-        scale[0].style.backgroundcolor = "red"
-    }
-}
-
-scale[0].style.color = "red"
-
-console.log(scale[0])
-
-input_range.addEventListener("input", event => {
-   prices_minutes()
-   scale(input_range.valueAsNumber)
-})
-
-
-
-prices_minutes()
 
 
 
