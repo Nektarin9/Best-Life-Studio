@@ -31,21 +31,19 @@ footer {
     height: auto;
 }
 
-
   .h2_text {
     font-size: 24px;
     font-weight: 400;
     color: #3d3d3d;
     margin-bottom: 5px;
     
-
 }
 
 .flex_p_price {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 25px 0 25px 0;
+    margin: 10px 0 10px 0;
     gap: 10px;
 
 }
@@ -57,6 +55,37 @@ footer {
     font-size: 22px;
     font-weight: 600;
 }
+.minutes {
+  text-align: center;
+  margin: 5px 0 0 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+.container_block_input {
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+.recommendation {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4f405f;
+  text-align: center;
+}
+
+.container_recommendation_scale {
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.recommendation_scale {
+  width: 8px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #4f405f;
+  
+}
+
 
  /* Блок с абонементами */
  .h2_text2 {
@@ -75,7 +104,7 @@ footer {
 }
 
  .button_price, .button_price_minutes {
-  width: 400px;
+  width: 250px;
   height: 50px;
   font-size: 22px;
   font-weight: 400;
@@ -160,37 +189,52 @@ footer {
 
 
 
-/* Блок макияжа и татуажа */
-.container_makeup {
+/* Блок с прайсом */
+
+.container_subscription {
   margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.new_price_container {
+  position: relative;
+}
+.span_old_price {
+  position: absolute;
+  top: 12px;
   width: 100%;
-  max-width: 700px;
+  border-top: 2px solid #727171;
 
 }
-.p_makeup {
-  margin: 10px 0 0px 0;
+.old_price {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #727171;
+}
+.price2 {
+  text-align: center;
   font-size: 24px;
   font-weight: 600;
-  color: #000000;
 }
-.p_makeup_price {
-  font-size: 20px;
-  margin-right: 5px;
+.span_dash {
+  position: absolute;
+  top: -20px;
+  left: -35px;
+  font-size: 50px;
+  font-weight: 100;
+  color: #727171;
+}
+
+
+.p_duration {
+  line-height: 24px;
+  font-size: 18px;
   font-weight: 400;
-  color: #000000;
-}
-.p_makeup_price1 {
-  font-size: 20px;
-  font-weight: 400;
-  color: #000000;
-  white-space: nowrap;
-}
-.container_makeup_price {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #000000;
-  padding: 10px 15px 5px 15px;
+  color: #727171;
 }
 
 
@@ -207,8 +251,8 @@ footer {
 
 
 .swiper {
-  width: 80%;
-  height: 600px;
+  width: 60%;
+  height: 550px;
   border: 2px solid #4f405f;
 }
 
@@ -222,7 +266,7 @@ footer {
 
 .swiper-button-left {
   position: absolute;
-  top: 275px;
+  top: 250px;
   left: 10px;
   width: 50px;
   height: 50px;
@@ -237,7 +281,7 @@ footer {
 }
 .swiper-button-right {
     position: absolute;
-    top: 275px;
+    top: 250px;
     right: 10px;
     width: 50px;
     height: 50px;
@@ -265,20 +309,15 @@ footer {
 
 
  
-.show_price_makeup {
-  display: block;
-}
-.show_price_tattoo {
-  display: none;
-}
+
 
 
 
 /* Модальные окна */
 
 .form_person img {
-  width: 100%; 
-  max-width: 650px; 
+  max-width: 500px; 
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -317,9 +356,8 @@ footer {
   position: absolute;
   visibility: hidden;
   margin: 0 auto;
-  width: 100%; 
-  max-width: 650px; 
-  
+  max-width: 500px; 
+  width: 100%;  
 
   /* фиксированное позиционирование, окно стабильно при прокрутке */
   position: fixed;
@@ -605,13 +643,7 @@ footer {
     
   
 }
-@media (max-width:650px) {
-  /* Для вертикальных фотографий */
-  .vertical_photo {
-    max-height: 400px;
-  }
-  
-}
+
 @media (max-width:360px) {
   .block_price {
     padding: 8px;
@@ -657,60 +689,69 @@ footer {
 
 
 
- /* Стилизация инпут чексбокса */
+ 
 
-.toggle {
-    cursor: pointer;
-    display: inline-block;
-  }
-  
-  .toggle-switch {
-    cursor: pointer;
-    display: inline-block;
-    background: #ccc;
-    border-radius: 16px;
-    width: 58px;
-    height: 32px;
-    position: relative;
-    vertical-align: middle;
-    transition: background 0.25s;
-  }
-  .toggle-switch:before, .toggle-switch:after {
-    content: "";
-  }
-  .toggle-switch:before {
-    display: block;
-    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    transition: left 0.25s;
-  }
-  .toggle:hover .toggle-switch:before {
-    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
-  }
-  .toggle-checkbox:checked + .toggle-switch {
-    background: #4f405f;
-  }
-  .toggle-checkbox:checked + .toggle-switch:before {
-    left: 30px;
-  }
-  
-  .toggle-checkbox {
-    position: absolute;
-    visibility: hidden;
-  }
-  
-  .toggle-label {
-    cursor: pointer;
-    margin-left: 5px;
-    font-size: 18px;
-    font-weight: 400;
-    position: relative;
-    top: 2px;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* input[type="range"]:focus,
+input[type="number"]:focus {
+  box-shadow: 0 0 3px 1px #4b81dd;
+  outline: none;
+} */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 15px 0 15px 0;
+  width: 400px;
+  height: 7px;
+  background: rgba(189, 189, 189, 0.918);
+  border-radius: 5px;
+  background-image: linear-gradient(#4f405f, #4f405f);
+  background-size: 45% 100%;
+  background-repeat: no-repeat;
+}
+
+
+/* Input Thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #4f405f;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #4f405f;
+  transition: background .3s ease-in-out;
+}
+
+
+
+
+
