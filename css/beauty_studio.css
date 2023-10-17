@@ -1,0 +1,813 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+main {
+  flex-grow: 1;
+}
+footer {
+  flex-grow: 0;
+}
+
+.section_container {
+    height: 100%;
+    margin-bottom: 20px;
+}
+.container_table_price {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    gap: 30px;
+}
+.block_price {
+    padding: 20px;
+    width: 800px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 auto;
+    height: auto;
+}
+
+
+  .h2_text {
+    font-size: 24px;
+    font-weight: 400;
+    color: #3d3d3d;
+    margin-bottom: 5px;
+    
+
+}
+
+.flex_p_price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px 0 25px 0;
+    gap: 10px;
+
+}
+.first_training {
+    font-size: 18px;
+    font-weight: 400;
+}
+.price {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+ /* Блок с абонементами */
+ .h2_text2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #3d3d3d;
+    margin: 5px 0 5px 0;
+ }
+ .button_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+ .button_price, .button_price_minutes {
+  width: 400px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+  border: solid 1px #4f405f;
+  cursor:pointer;
+  transition: 0.4s;
+  padding: 5px;
+}
+
+
+.button_price:focus, .button_price_minutes:focus {
+  background-color: #4f405f;
+  color: #ffffff;
+  transform: 0.4s;
+}
+
+.button_price.active , .button_price_minutes.active {
+  background-color: #4f405f;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+/* Блок с тренерами */
+.container_person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.container_button_person {
+  position: relative;
+  margin: 20px;
+  width: 130px;
+  height: 170px;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+  border: 1px solid #000000;
+  background-size: cover;
+  transition: 0.8s;
+  background-color: #4f405f;
+}
+
+.container_button_person.active  {
+  background-color: #333333;
+  transform: 0.8s;
+}
+.p_name {
+  position: absolute;
+  margin-top: 65px;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Студия красоты */
+.container_makeup {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 700px;
+}
+.container_service {
+  margin: 10px 0 0px 0;
+  display: flex; 
+  justify-content: space-between;
+}
+.flex_vip {
+  display: flex;
+  gap: 20px;
+}
+.p_vip {
+  font-size: 18px;
+  font-weight: 400;
+}
+.p_makeup {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.container_makeup_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+  padding: 10px 15px 5px 15px;
+}
+.p_max_with {
+  max-width: 400px;
+}
+.flex_price_vip {
+  width: 200px;
+  display: flex;
+  
+  
+}
+.p_makeup_price {
+  font-size: 16px;
+  margin-right: 5px;
+  font-weight: 400;
+  color: #000000;
+}
+.p_makeup_price1 {
+  width: 100%;
+  margin-right: 10px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+  text-align: right;
+}
+.p_makeup_price2 {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+  text-align: right;
+}
+
+
+.span_text {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+.swiper {
+  width: 80%;
+  height: 600px;
+  border: 2px solid #4f405f;
+}
+
+.swiper-slide img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper-button-left {
+  position: absolute;
+  top: 275px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: #4f405f;
+
+}
+.swiper-button-right {
+    position: absolute;
+    top: 275px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	  border-radius: 50px;
+    background-color: #4f405f;
+}
+
+.swiper_svg_left {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 11px;
+}
+.swiper_svg_right {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 11px;
+}
+
+
+ 
+.show_price_brows {
+  display: none;
+}
+.show_price_manicure {
+  display: block;
+}
+
+
+
+/* Модальные окна */
+
+.form_person img {
+  width: 100%; 
+  max-width: 650px; 
+  border-radius: 10px;
+}
+
+/*** Формируем стили модального окна ***/
+.overlay_person {
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  /* фон затемнения */
+  background-color: rgba(0, 0, 0, 0.562);
+  opacity: 0;
+  position: fixed; /* фиксированное поцизионирование */
+  cursor: default; /* тип курсара */
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+  }
+  .overlay_person:target {
+  visibility: visible;
+  opacity: 1;
+  }
+
+
+.modal_person {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  margin: 0 auto;
+  width: 100%; 
+  max-width: 650px; 
+  
+
+  /* фиксированное позиционирование, окно стабильно при прокрутке */
+  position: fixed;
+  /* скругление углов */
+  border-radius: 10px;
+ 
+  /* полная прозрачность окна, появление при клике */
+  opacity: 0;
+  /* эффект перехода (появление) */
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+  }
+  /* активируем появление окна и затемнение фона */
+  .overlay_person:target+.modal_person {
+  top: 9%; /* положение окна от верха страницы при появлении */
+  visibility: visible;
+  opacity: 1; /* убираем прозрачность */
+  }
+
+
+
+
+
+@media (max-width:1800px) {
+ 
+  .container_table_price {
+      padding-top: 90px;  
+  }
+}
+  
+
+
+
+@media (max-width:840px) {
+ 
+  .block_price {
+      padding: 10px;
+      width: 500px;
+      border-radius: 10px;
+      background-color: white;
+      margin: 0 auto;
+      height: auto;
+  }
+
+  
+  .h2_text {
+    font-size: 20px;
+  }
+  .h2_text2 {
+    font-size: 20px;
+  }
+
+  .first_training {
+      font-size: 16px;
+  }
+  .price {
+      font-size: 20px;
+  }
+
+ 
+  .container_button_person {
+    margin: 10px 10px 20px 10px;
+    width: 100px;
+    height: 130px;
+    border-radius: 5px;
+  }
+  
+  .p_name {
+    position: absolute;
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  /* Кнопки */
+
+  .button_price {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+  }
+  /* Модальные окна */
+  
+  .modal_person {
+    width: 90%;
+  }
+  .img_person {
+    width: 173px;
+    height: 226px;
+    margin: 0 5px 5px 0;
+  }
+ /* Студия красоты */
+
+
+.flex_vip {
+  display: flex;
+  gap: 20px;
+}
+.p_vip {
+  font-size: 16px;
+}
+.p_makeup {
+  font-size: 18px;
+ 
+}
+.p_max_with {
+  max-width: 270px;
+}
+.flex_price_vip {
+  width: 200px;
+}
+.p_makeup_price {
+  font-size: 14px;
+  margin-right: 5px;
+  font-weight: 400;
+  color: #000000;
+}
+.p_makeup_price1 {
+  width: 100%;
+  margin-right: 10px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+  text-align: right;
+}
+.p_makeup_price2 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+  text-align: right;
+}
+
+
+.span_text {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  margin-right: 2px;
+}
+.container_makeup_price {
+  padding: 4px 0px 4px 5px;
+}
+  /* Слайдер */
+  .swiper {
+    width: 100%;
+    height: 420px;
+  }
+  .swiper-button-left {
+    top: 185px;
+    left: 5px;
+  }
+  .swiper-button-right {
+      top: 185px;
+      right: 5px;
+  }
+  
+ 
+  
+}
+
+@media (max-width:500px) {
+  
+  .container_table_price {
+    padding-top: 100px;
+    
+  }
+  .block_price {
+      padding: 15px;
+      width: 90%;
+      border-radius: 4px;
+      background-color: white;
+      margin: 0 auto;
+      height: auto;
+  }
+  .h2_text {
+    line-height: 28px;
+}
+ 
+/* Кнопки */
+.button_container {
+  gap: 10px;
+}
+
+.button_price {
+  width: 45%;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+/* Студия красоты */
+
+
+.flex_vip {
+  gap: 10px;
+}
+.p_vip {
+  font-size: 14px;
+}
+.p_makeup {
+  font-size: 16px;
+}
+.p_max_with {
+  max-width: 170px;
+}
+.flex_price_vip {
+  width: 150px;
+}
+.p_makeup_price {
+  font-size: 14px;
+  margin-right: 2px;
+}
+.p_makeup_price1 {
+  font-size: 15px;
+}
+.p_makeup_price2 {
+  font-size: 15px;
+}
+
+
+.span_text {
+  font-size: 10px;
+  margin-right: 2px;
+}
+
+ 
+    /* Модальные окна */
+ 
+  
+  
+  .img_person {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 173px;
+    height: 226px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+ 
+  .container_text_modal {
+    margin: 0 auto;
+  }
+  .h2_modal {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+  }
+  
+  .h3_modal {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1.2px;
+    margin: 10px 0 10px 0;
+  
+  }
+  .p_modal {
+    text-indent: 25px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    line-height: 24px;
+    margin: 5px 0 5px 0;
+  }
+ 
+    /* Слайдер */
+  .swiper {
+    width: 100%;
+    height: 340px;
+  }
+  .swiper-button-left {
+    top: 155px;
+    left: 3px;
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-right {
+      top: 155px;
+      right: 3px;
+      width: 40px;
+      height: 40px;
+  }
+  .swiper_svg_left {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 9px;
+  }
+  .swiper_svg_right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 9px;
+  }
+  
+  
+  /* активируем появление окна и затемнение фона */
+  .overlay_person:target+.modal_person {
+    top: 20%; /* положение окна от верха страницы при появлении */
+    visibility: visible;
+    opacity: 1; /* убираем прозрачность */
+    }
+    
+  
+}
+
+
+
+
+@media (max-width:370px) {
+  .block_price {
+    padding: 8px;
+  }
+
+/* Студия красоты */
+  .flex_vip {
+    gap: 7px;
+  }
+  .p_vip {
+    font-size: 12px;
+  }
+  .p_makeup {
+    font-size: 14px;
+  }
+  .p_max_with {
+    max-width: 150px;
+  }
+  .flex_price_vip {
+    width: 130px;
+  }
+  .p_makeup_price {
+    font-size: 10px;
+    margin-right: 2px;
+  }
+  .p_makeup_price1 {
+    font-size: 12px;
+  }
+  .p_makeup_price2 {
+    font-size: 12px;
+  }
+  
+  
+  .span_text {
+    font-size: 10px;
+    margin-right: 2px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Стилизация инпут чексбокса */
+
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .toggle-switch {
+    cursor: pointer;
+    display: inline-block;
+    background: #ccc;
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+  }
+  .toggle-switch:before, .toggle-switch:after {
+    content: "";
+  }
+  .toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+  }
+  .toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+  }
+  .toggle-checkbox:checked + .toggle-switch {
+    background: #4f405f;
+  }
+  .toggle-checkbox:checked + .toggle-switch:before {
+    left: 30px;
+  }
+  
+  .toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .toggle-label {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    top: 2px;
+  }
