@@ -81,7 +81,7 @@ function button_minutes() {
 }
 
 
-block_price(0)
+
 button_minutes()
 button() 
 body_hidden()

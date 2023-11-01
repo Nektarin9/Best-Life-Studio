@@ -11,10 +11,10 @@ slider_makeup.style.display = "none"
 
 
 for (let i = 0; i < btn.length; i++) {
-btn[i].addEventListener("click", event => {
-    counter = i
-    show_content()
-})
+    btn[i].addEventListener("click", event => {
+        counter = i
+        show_content()
+    })
 }
 
 function show_content() {
@@ -54,6 +54,14 @@ function show_content() {
         <div class="container_makeup_price">
             <p class="p_makeup_price">Межресничное пространство со стрелочкой</p>
             <p class="p_makeup_price1">7000 ₽</p>
+        </div>
+        <p id="price" class="p_makeup">Коррекция:</p>
+        <div class="container_makeup_price">
+            <p class="p_makeup_price">Коррекция любой зоны - 50% от стоимости (через 1-2 месяца) на мою работу</p>
+        </div>
+        <div class="container_makeup_price">
+            <p class="p_makeup_price">Процедура обновления (спустя 2 месяца и более от первичной)</p>
+            <p class="p_makeup_price1">5000 ₽</p>
         </div>
     </div>`
     slider_makeup.style.display = "block"

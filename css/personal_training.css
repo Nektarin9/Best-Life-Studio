@@ -44,9 +44,10 @@ footer {
 .button_price {
     width: 180px;
     height: 50px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #000000;
+    font-size: 20px;
+    font-family: "Nunito";
+    font-weight: 600;
+    color: #4f405f;
     border: solid 1px #4f405f;
     cursor:pointer;
     transition: 0.4s;
@@ -67,9 +68,9 @@ footer {
 
 
   .h2_text {
-    font-size: 24px;
-    font-weight: 400;
-    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 800;
+    color:#4f405f;
     margin-bottom: 10px;
     
 
@@ -86,21 +87,30 @@ footer {
 .first_training {
     font-size: 18px;
     font-weight: 400;
+    color: #4f405f;
 }
 .price {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
+    color: #4f405f;
 }
 
  /* Блок с абонементами */
  .h2_text2 {
     text-align: center;
-    font-size: 24px;
-    font-weight: 400;
-    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 600;
+    color:#4f405f;
     margin: 10px 0 10px 0;
  }
- 
+ .h2_text3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color:#4f405f;
+    margin: 5px 0 5px 0;
+ }
+
 .container_subscription {
     margin: 20px auto;
     display: flex;
@@ -113,42 +123,44 @@ footer {
     position: relative;
 }
 .span_old_price {
-    position: absolute;
-    top: 12px;
-    width: 100%;
-    border-top: 2px solid #727171;
+  position: absolute;
+  top: 11px;
+  width: 100%;
+  border-top: 2px solid #4f405f;
 
 }
 .old_price {
     text-align: center;
-    font-size: 22px;
-    font-weight: 600;
-    color: #727171;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4f405f;
 }
 .price2 {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
+    color: #4f405f;
 }
 .span_dash {
-    position: absolute;
-    top: -8px;
-    left: -35px;
-    font-size: 50px;
-    font-weight: 100;
-    color: #727171;
+  position: absolute;
+  top: -18px;
+  left: -35px;
+  font-size: 60px;
+  font-weight: 100;
+  color:#4f405f;
 }
 
 .p_number_subscription {
     line-height: 24px;
     font-size: 18px;
     font-weight: 400;
+    color:#4f405f;
 }
 .p_duration {
     line-height: 24px;
     font-size: 18px;
     font-weight: 400;
-    color: #727171;
+    color:#4f405f;
 }
 
 /* Блок с тренерами */
@@ -178,6 +190,7 @@ footer {
   transform: 0.8s;
 }
 .p_name {
+  font-family: "Nunito";
   position: absolute;
   margin-top: 65px;
   padding-left: 10px;
@@ -185,11 +198,11 @@ footer {
   padding-bottom: 2px;
   padding-right: 10px;
   border-radius: 5px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: left;
   color: #ffffff;
   background-color: #000000;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 
@@ -227,6 +240,7 @@ footer {
   margin: 0 auto;
 }
 .h2_modal {
+  font-family: "Nunito";
   color: white;
   font-size: 24px;
   font-weight: 600;
@@ -234,6 +248,7 @@ footer {
   line-height: 32px;
 }
 .h3_modal {
+  font-family: "Nunito";
   color: white;
   font-size: 20px;
   line-height: 26px;
@@ -243,6 +258,7 @@ footer {
 
 }
 .p_modal {
+  font-family: "Nunito";
   text-indent: 25px;
   color: white;
   font-size: 18px;
@@ -347,16 +363,7 @@ footer {
       padding: 8px;
       line-height: 20px;
     }
-    .h2_text {
-      font-size: 20px;
-  }
-
-  .first_training {
-      font-size: 16px;
-  }
-  .price {
-      font-size: 20px;
-  }
+   
 
   /* Блок с абонементами */
   .h2_text2 {
@@ -421,7 +428,7 @@ footer {
   .button_price {
       width: 48%;
       height: 60px;
-      font-size: 18px;
+      font-size: 16px;
       border-radius: 5px;
 
     }
@@ -432,9 +439,9 @@ footer {
     gap: 20px;
   }
   .span_dash {
-    top: -2px;
+    top: -10px;
     left: -17px;
-    font-size: 40px;
+    font-size: 50px;
   }
   .p_number_subscription {
     line-height: 24px;
@@ -453,8 +460,7 @@ footer {
   }
   .p_name {
     position: absolute;
-    margin-top: 50px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .container_person {
     gap: 20px;
@@ -512,7 +518,33 @@ footer {
     margin: 5px 0 5px 0;
   }
  
-  
+  .h2_text {
+    font-size: 16px;
+  }
+  .h2_text2 {
+    font-size: 16px;
+  }
+  .h2_text3 {
+    font-size: 16px;
+ }
+  .first_training {
+    font-size: 16px;
+  }
+  .toggle-label {
+    font-size: 16px;
+  }
+  .price {
+      font-size: 16px;
+  }
+  .p_number_subscription {
+    font-size: 14px;
+  }
+  .p_duration {
+    font-size: 14px;
+  }
+  .first_training {
+    font-size: 14px;
+  }
 }
 
 @media (max-width:360px) {
@@ -610,8 +642,9 @@ footer {
   .toggle-label {
     cursor: pointer;
     margin-left: 5px;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     position: relative;
     top: 2px;
+    color: #4f405f;
   }

@@ -11,8 +11,28 @@
 /* О нас*/
 .container_about_us {
     background-color: #6e6e6e;
-    height: 200px;
+    height: auto;
     width: 100%;
+    padding: 15px 0 15px 0;
+}
+.about_us {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    max-width: 1200px;
+}
+.h2_text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+.p_about_us {
+    margin: 5px 10px 5px 10px;
+    text-indent: 30px;
+    color: white;
+    font-size: 18px;
 }
 /* Наши плюсы*/
 
@@ -52,6 +72,7 @@
     text-align: center;
     margin-top: 15px;
     font-size: 18px;
+    font-weight: 600;
     color: #4f405f;
 }
 
@@ -75,15 +96,14 @@ main {
  .h2_services {
     text-align: center;
     color: #ffffff;
-    font-family: 'spaceranger-rus';
-    letter-spacing: 2.5px;
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 800;
 }
 .p_services1 {
+    margin: 0 5px 0 5px;
     text-align: center;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
  /* ------------------- */
@@ -116,7 +136,7 @@ main {
     margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 7px;
-    box-shadow: 0px 5px 10px 0px #4f405f
+    box-shadow: 0px 5px 10px 0px #4f405f;
 }
 
 
@@ -146,33 +166,59 @@ main {
 .p_services {
     text-align: center;
     color: #ffffffe8;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 800;
     margin: 5px;
 }
 
 
  /* ------------------------------------- */
  /*Отзывы */
+ .block_reviews {
+    width: 100%;
+    background-color: white;
+    padding: 25px 0px 25px 0px;
+    height: auto;
+ }
 .container_reviews {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
-    width: 100%;
-    background-color: white;
-    padding: 15px 0px 15px 0px;
-    height: auto;
+    gap: 50px; 
+}
+.h2_text_reviews {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: #4f405f;
+    margin: 0 0 15px 0;
 }
 .img_reviews {
     width: 220px;
     height: 200px;
 }
 
- 
+  /* ------------------------------------- */
+ /* Панорама */
+.container_panorama {
+    margin: auto;
+    width: 100%;
+    padding: 25px 0 25px 0px;
+    height: auto;
+}
+
+.panorama {
+    display: block;
+    margin: 25px auto;
+    width: 80%;
+    height: 750px;
+    min-width: 320px;
+    position:relative;
+    border-radius: 15px;
+    border: none; 
+    border: 1px solid white;
+}
 
 
 
@@ -192,11 +238,8 @@ main {
         padding-bottom: 30px;
     }
     /* Параметры заголовка "Наши услуги" */
-    .h2_services {
-        font-size: 30px;
-    }
+    
     .p_services1 {
-        font-size: 18px;
         padding-bottom: 10px;
     }
     .block_pers_workout {
@@ -219,6 +262,11 @@ main {
         max-height: 500px;
         background-image: url(../igmp/Основатели.jpeg);
     }
+      /* О нас*/
+    .about_us {
+        max-width: 800px;
+    }
+   
     /* Наши плюсы*/
     .flex_our_advantages {
         max-width: 100%;
@@ -234,18 +282,19 @@ main {
         width: 50px;
         height: 50px;
     }
-    .p_plus {
-        font-size: 14px;
-    }
+   
     main {
         width: 100%;
     }
-    /* Параметры заголовка "Наши услуги" */
-    .h2_services {
-        font-size: 30px;
+    /* Панорама */
+ 
+    .panorama {
+        width: 95%;
+        height: 600px;
     }
+    /* Параметры заголовка "Наши услуги" */
+    
     .p_services1 {
-        font-size: 18px;
         padding-bottom: 0px;
     }
     .container_services {
@@ -255,6 +304,7 @@ main {
         margin: 35px 0px 0px 0px;
         width: 90%;
     }
+    
      /*Отзывы */
     .container_reviews {
         gap: 50px;
@@ -266,6 +316,11 @@ main {
     .section_img {
         max-height: 400px;
     }
+     /* О нас*/
+     .about_us {
+        width: 100%;
+    }
+   
     /* Наши плюсы*/
     .flex_our_advantages {
         max-width: 100%;
@@ -281,20 +336,13 @@ main {
         width: 50px;
         height: 50px;
     }
-    .p_plus {
-        font-size: 14px;
-    }
+  
     main {
         width: 100%;
     }
     /* Параметры заголовка "Наши услуги" */
-    .h2_services {
-        font-size: 30px;
-    }
-    .p_services1 {
-        font-size: 18px;
-        padding-bottom: 0px;
-    }
+    
+    
     .container_services {
         max-width: 100%;
     }
@@ -314,6 +362,16 @@ main {
 }
 
 @media (max-width:500px) {
+    /* О нас*/
+    .about_us {
+        width: 100%;
+    }
+    .h2_text {
+        font-size: 16px;
+    }
+    .p_about_us {
+        font-size: 14px;
+    }
      /* Наши плюсы*/
      .flex_our_advantages {
         max-width: 100%;
@@ -329,7 +387,7 @@ main {
         height: 50px;
     }
     .p_plus {
-        font-size: 14px;
+        font-size: 16px;
     }
     main {
         width: 100%;
@@ -340,12 +398,13 @@ main {
         gap: 20px;
     }
     /* Параметры заголовка "Наши услуги" */
-    .h2_services {
-        font-size: 25px;
-    }
+    
     .p_services1 {
-        font-size: 14px;
+        font-size: 16px;
         padding-bottom: 0px;
+    }
+    .h2_services {
+        font-size: 16px;
     }
     .container_services {
         max-width: 100%;
@@ -367,25 +426,30 @@ main {
         margin-right: 5px;
     }
     .p_services {
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 16px;
     }
+    
      /*Отзывы */
     .container_reviews {
         gap: 50px;
         height: auto;
     }
+    .h2_text_reviews {
+        font-size: 16px;
+    }
     .img_reviews {
         width: 122px;
         height: 125px;
     }
-}
-@media (max-width:400px) {
-    .p_services {
-        font-size: 14px;
-        line-height: 26px;
+    .container_panorama {
+        padding: 15px 0 15px 0px;
+    }
+    .panorama {
+        margin-top: 15px;
+        height: 320px;
     }
 }
+
 
 @media (max-width:360px) {
    /* Наши плюсы*/
@@ -402,6 +466,25 @@ main {
         height: 50px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -14,3 +14,4 @@ function button_active(selector) {
 }
 button_active('.button_price')
 button_active('.button_price_minutes')
+

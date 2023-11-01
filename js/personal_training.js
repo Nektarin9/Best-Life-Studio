@@ -121,7 +121,6 @@ function person_block() {
 }
 
 
-block_price(0)
 person_block()
 checkbox()
 button()

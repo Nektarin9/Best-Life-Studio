@@ -33,9 +33,9 @@ footer {
 
 
   .h2_text {
-    font-size: 24px;
-    font-weight: 400;
-    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 800;
+    color: #4f405f;
     margin-bottom: 5px;
     
 
@@ -46,24 +46,26 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     margin: 25px 0 25px 0;
-    gap: 10px;
+    gap: 5px;
 
 }
 .first_training {
     font-size: 18px;
     font-weight: 400;
+    color: #4f405f;
 }
 .price {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
+    color: #4f405f;
 }
 
  /* Блок с абонементами */
  .h2_text2 {
     text-align: center;
-    font-size: 24px;
-    font-weight: 400;
-    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 800;
+    color:#4f405f;
     margin: 5px 0 5px 0;
  }
  .button_container {
@@ -77,9 +79,10 @@ footer {
  .button_price, .button_price_minutes {
   width: 400px;
   height: 50px;
-  font-size: 22px;
-  font-weight: 400;
-  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4f405f;
+  font-family: "Nunito";
   border: solid 1px #4f405f;
   cursor:pointer;
   transition: 0.4s;
@@ -169,20 +172,20 @@ footer {
 }
 .p_makeup {
   margin: 10px 0 0px 0;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  color: #000000;
+  color: #4f405f;
 }
 .p_makeup_price {
-  font-size: 20px;
+  font-size: 18px;
   margin-right: 5px;
   font-weight: 400;
-  color: #000000;
+  color: #4f405f;
 }
 .p_makeup_price1 {
-  font-size: 20px;
-  font-weight: 400;
-  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4f405f;
   white-space: nowrap;
 }
 .container_makeup_price {
@@ -210,6 +213,7 @@ footer {
   width: 80%;
   height: 600px;
   border: 2px solid #4f405f;
+  border-radius: 10px;
 }
 
 .swiper-slide img{
@@ -232,8 +236,24 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  background-color: #4f405f;
+  background-color: #4f405fa1;
+  transition: 0.3s;
 
+}
+.swiper_svg_left {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 11px;
+  fill: #ffffff;
+}
+.swiper-button-left:hover {
+  transform: 0.3s;
+  background-color: #4f405f;
+  box-shadow: none
+}
+.swiper-button-left:active{
+  background-color: #7c7a7e;
 }
 .swiper-button-right {
     position: absolute;
@@ -247,21 +267,27 @@ footer {
     align-items: center;
     justify-content: center;
 	  border-radius: 50px;
-    background-color: #4f405f;
-}
-
-.swiper_svg_left {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 11px;
+    background-color: #4f405fa1;
+    transition: 0.3s;
 }
 .swiper_svg_right {
   position: absolute;
   width: 40px;
   height: 40px;
   right: 11px;
+  fill: #ffffff;
 }
+.swiper-button-right:hover {
+  transform: 0.3s;
+  background-color: #4f405f;
+  box-shadow: none
+}
+.swiper-button-right:active{
+  background-color: #7c7a7e;
+}
+
+
+
 
 
  
@@ -368,19 +394,7 @@ footer {
   }
 
   
-  .h2_text {
-    font-size: 20px;
-  }
-  .h2_text2 {
-    font-size: 20px;
-  }
-
-  .first_training {
-      font-size: 16px;
-  }
-  .price {
-      font-size: 20px;
-  }
+ 
 
  
   .container_button_person {
@@ -420,7 +434,7 @@ footer {
   }
   .p_makeup {
     margin: 10px 0 0 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
   }
   .p_makeup_price {
@@ -468,14 +482,26 @@ footer {
   }
   .h2_text {
     line-height: 28px;
+    font-size: 16px;
+  }
+  .h2_text2 {
+    font-size: 16px;
+  }
+  .price {
+      font-size: 16px;
+  }
+  .first_training {
+    font-size: 14px;
 }
- 
 /* Кнопки */
-
+.button_container {
+  gap: 10px;
+}
 
 .button_price {
-  width: 140px;
-  height: 60px;
+  width: 45%;
+  height: 70px;
+  border-radius: 5px;
   font-size: 16px;
 }
 /* Блок макияжа и татуажа */
@@ -616,7 +642,12 @@ footer {
   .block_price {
     padding: 8px;
   }
-  
+  .button_price {
+    width: 45%;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
 }
 
 

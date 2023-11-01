@@ -53,23 +53,19 @@ footer {
     font-size: 18px;
     font-weight: 400;
 }
-.price {
-    font-size: 22px;
-    font-weight: 600;
-}
+
 
  /* Блок с абонементами */
  .h2_text2 {
     text-align: center;
     font-size: 20px;
     font-weight: 800;
-    color:#4f405f;
+    color: #4f405f;
     margin: 5px 0 5px 0;
  }
  .button_container {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -78,11 +74,10 @@ footer {
  .button_price, .button_price_minutes {
   width: 400px;
   height: 50px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #4f405f;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
   border: solid 1px #4f405f;
-  font-family: "Nunito";
   cursor:pointer;
   transition: 0.4s;
   padding: 5px;
@@ -140,11 +135,12 @@ footer {
   padding-bottom: 2px;
   padding-right: 10px;
   border-radius: 5px;
-  font-weight: 400;
+  font-family: "Nunito";
+  font-weight: 600;
   text-align: left;
   color: #ffffff;
   background-color: #000000;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 
@@ -178,13 +174,12 @@ footer {
 }
 .p_vip {
   font-size: 18px;
-  font-weight: 600;
-  color: #4f405f;
+  font-weight: 400;
 }
 .p_makeup {
   font-size: 20px;
   font-weight: 600;
-  color:#4f405f;
+  color: #4f405f;
 }
 
 .container_makeup_price {
@@ -203,38 +198,25 @@ footer {
   
   
 }
+
 .p_makeup_price {
   font-size: 18px;
-  margin-right: 5px;
   font-weight: 400;
-  color:#4f405f;
-}
-.p_makeup_price1 {
-  width: 100%;
-  margin-right: 10px;
-  position: relative;
-  font-size: 18px;
-  font-weight: 600;
-  color:#4f405f;
-  white-space: nowrap;
-  text-align: right;
+  color: #4f405f;
+ 
 }
 .p_makeup_price2 {
   width: 100%;
   font-size: 18px;
   font-weight: 600;
   color: #4f405f;
+  font-family: "Nunito";
   white-space: nowrap;
   text-align: right;
 }
 
 
-.span_text {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: right;
-  margin-right: 5px;
-}
+
 
 
 
@@ -248,103 +230,66 @@ footer {
 
 
 
-.swiper {
-  width: 80%;
-  height: 600px;
-  border: 2px solid #4f405f;
-  border-radius: 10px;
-}
 
-.swiper-slide img{
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-.swiper-button-left {
-  position: absolute;
-  top: 275px;
-  left: 10px;
-  width: 50px;
-  height: 50px;
-  z-index: 10;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  background-color: #4f405fa1;
-  transition: 0.3s;
-
-}
-.swiper-button-left:hover {
-  transform: 0.3s;
-  background-color: #4f405f;
-  box-shadow: none
-}
-.swiper-button-left:active{
-  background-color: #7c7a7e;
-}
-.swiper-button-right {
-    position: absolute;
-    top: 275px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	  border-radius: 50px;
-    background-color: #4f405fa1;
-    transition: 0.3s;
-}
-.swiper-button-right:hover {
-  transform: 0.3s;
-  background-color: #4f405f;
-  box-shadow: none
-}
-.swiper-button-right:active{
-  background-color: #7c7a7e;
-}
-.swiper_svg_left {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 11px;
-}
-.swiper_svg_right {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 11px;
-}
-
-
- 
-.show_price_brows {
-  display: none;
-}
-.show_price_manicure {
-  display: block;
-}
 
 
 
 /* Модальные окна */
 
-.form_person img {
-  width: 100%; 
-  max-width: 650px; 
-  border-radius: 10px;
+/* Модальные окна */
+
+.form_person {
+  padding: 20px;
+  margin: 20px 0 0 0;
+  max-height: 700px;
+  --lms_scrollpath_bg: #5c5c5c73;
+  --lms_scrollbar_bg: #c9c9c9;
+  --lms_scrollbar_radius: 5px;
+  --lms_scrollpath_radius: 5px;
+}
+.scroll_container {
+  max-height: 700px;
+}
+.img_person {
+  float:left;
+  width: 260px;
+  height: 340px;
+  margin-right: 10px;
+}
+.container_text_modal {
+  margin: 0 auto;
+}
+.h2_modal {
+  font-family: "Nunito";
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: 32px;
+}
+.h3_modal {
+  font-family: "Nunito";
+  color: white;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin: 20px 0 20px 0;
+
+}
+.p_modal {
+  font-family: "Nunito";
+  text-indent: 25px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  line-height: 24px;
+  margin: 10px 0 10px 0;
+  font-weight: 400;
 }
 
 /*** Формируем стили модального окна ***/
 .overlay_person {
-  
   top: 0;
   right: 0;
   bottom: 0;
@@ -352,7 +297,7 @@ footer {
   z-index: 1;
   visibility: hidden;
   /* фон затемнения */
-  background-color: rgba(0, 0, 0, 0.562);
+  background-color: rgba(0, 0, 0, 0.192);
   opacity: 0;
   position: fixed; /* фиксированное поцизионирование */
   cursor: default; /* тип курсара */
@@ -372,20 +317,26 @@ footer {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  font-size: 16px;
+  z-index: 9999;
   display: block;
-  position: absolute;
   visibility: hidden;
   margin: 0 auto;
-  width: 100%; 
-  max-width: 650px; 
-  
-
+  width: 90%;
+  height: auto;
+  max-width: 820px;
   /* фиксированное позиционирование, окно стабильно при прокрутке */
   position: fixed;
+  padding: 15px;
   /* скругление углов */
-  border-radius: 10px;
- 
+  border-radius: 5px;
+  background-color: #000000b7;
+  /* внешняя тень блока */
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.473);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.473);
+  -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.473);
+  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.473);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.473);
   /* полная прозрачность окна, появление при клике */
   opacity: 0;
   /* эффект перехода (появление) */
@@ -397,7 +348,7 @@ footer {
   }
   /* активируем появление окна и затемнение фона */
   .overlay_person:target+.modal_person {
-  top: 9%; /* положение окна от верха страницы при появлении */
+  top: 15%; /* положение окна от верха страницы при появлении */
   visibility: visible;
   opacity: 1; /* убираем прозрачность */
   }
@@ -428,7 +379,10 @@ footer {
   }
 
   
-  
+  .h2_text {
+    font-size: 20px;
+  }
+ 
 
   .first_training {
       font-size: 16px;
@@ -454,7 +408,8 @@ footer {
 
   .button_price {
     width: 200px;
-    height: 70px;
+    height: 60px;
+    font-size: 18px;
   }
   /* Модальные окна */
   
@@ -476,10 +431,7 @@ footer {
 .p_vip {
   font-size: 16px;
 }
-.p_makeup {
-  font-size: 18px;
- 
-}
+
 .p_max_with {
   max-width: 270px;
 }
@@ -489,13 +441,13 @@ footer {
 .p_makeup_price {
   font-size: 14px;
   margin-right: 5px;
- 
+  font-weight: 400;
 }
 .p_makeup_price1 {
   width: 100%;
   margin-right: 10px;
+  position: relative;
   font-size: 16px;
-
 }
 .p_makeup_price2 {
   width: 100%;
@@ -503,10 +455,6 @@ footer {
 }
 
 
-.span_text {
-  font-size: 16px;
-  margin-right: 2px;
-}
 .container_makeup_price {
   padding: 4px 0px 4px 5px;
 }
@@ -529,15 +477,7 @@ footer {
 }
 
 @media (max-width:500px) {
-  .h2_text {
-    font-size: 16px;
-  }
-  .h2_text2 {
-    font-size: 16px;
-  }
-  .p_makeup {
-    font-size: 16px;
-  }
+  
   .container_table_price {
     padding-top: 100px;
     
@@ -552,6 +492,7 @@ footer {
   }
   .h2_text {
     line-height: 28px;
+    font-size: 16px;
 }
  
 /* Кнопки */
@@ -561,11 +502,11 @@ footer {
 
 .button_price {
   width: 45%;
-  height: 70px;
+  height: 45px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
 }
-/* Студия красоты */
+/* Косметология */
 
 
 .flex_vip {
@@ -591,20 +532,43 @@ footer {
   font-size: 15px;
 }
 .p_makeup_price2 {
-  font-size: 15px;
-}
-
-
-.span_text {
   font-size: 14px;
+}
+.h2_text2 {
+  font-size: 16px;
+}
+.p_name {
+  font-size: 16px;
+}
+.span_text {
+  font-size: 10px;
   margin-right: 2px;
 }
 
- 
+.container_button_person {
+  margin: 0px 0px 0px 0px;
+  width: 130px;
+  height: 170px;
+  border-radius: 5px;
+}
     /* Модальные окна */
  
   
   
+  /* Модальные окна */
+  .form_person {    
+    padding: 20px 1px 0 0;
+    margin: 0;
+    
+    height: 610px;
+  }
+  .modal_person {
+    width: 85%;
+  }
+  /* активируем появление окна и затемнение фона */
+  .overlay_person:target+.modal_person {
+    top: 2%; /* положение окна от верха страницы при появлении */
+    }
   .img_person {
     float: none;
     display: block;
@@ -626,7 +590,6 @@ footer {
     letter-spacing: 1.2px;
     line-height: 30px;
   }
-  
   .h3_modal {
     text-align: center;
     color: white;
@@ -676,12 +639,6 @@ footer {
   }
   
   
-  /* активируем появление окна и затемнение фона */
-  .overlay_person:target+.modal_person {
-    top: 20%; /* положение окна от верха страницы при появлении */
-    visibility: visible;
-    opacity: 1; /* убираем прозрачность */
-    }
     
   
 }
@@ -701,7 +658,7 @@ footer {
   .p_vip {
     font-size: 12px;
   }
-
+  
   .p_max_with {
     max-width: 150px;
   }

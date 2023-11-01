@@ -11,10 +11,10 @@ const price_solarium = {
 
 let counter = 0
 for (let i = 0; i < btn.length; i++) {
-btn[i].addEventListener("click", event => {
-    counter = i
-    show_content()
-})
+    btn[i].addEventListener("click", event => {
+        counter = i
+        show_content()
+    })
 }
 
 function content() {
@@ -40,7 +40,6 @@ function show_content() {
     }
 }
 
-show_content()
 
 
 

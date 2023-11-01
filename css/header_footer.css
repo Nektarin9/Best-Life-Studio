@@ -1,12 +1,10 @@
 /* Базовые стили */
     /* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:ital,wght@0,400;0,700;0,900;1,1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');
 
 
-@font-face {
-    font-family: 'spaceranger-rus';
-    src: url(../font/spaceranger-rus.otf);
-  }
+ 
 
 
 * {
@@ -24,7 +22,7 @@ body {
     height: 100%;
     width: 100%;
     /* Устанавливает фоновый цвет, который будет отображаться, пока загружается фоновое изображение */
-    font-family: "inter", 'Times New Roman', sans-serif, Times, serif, Georgia;
+    font-family: "Nunito", "inter", 'Times New Roman', sans-serif, Times, serif, Georgia;
     background-color: #6e6e6e; 
     overflow-y: scroll;
     scroll-behavior: smooth; 
@@ -114,18 +112,19 @@ header {
     display: flex;
     align-items: center;
 }
-.igmp_logo {
+.a_logo {
     width: 95px;
     height: 80px;
-    margin-right: 15px;
-    cursor: pointer;
+}
+.igmp_logo {
+    width: 100%;
+    height: 100%;
 }
 .h1_text {
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 2.5px;
+    margin: 30px 0 0 15px;
+    font-size: 20px;
+    font-weight: 800;
     color: #ffffff;
-    font-family: 'spaceranger-rus';
 	
 }
 
@@ -135,7 +134,7 @@ header {
 .a_phone {
     color: #ffffff;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 800;
     transition: 0.5s;
 }
 .a_phone:hover {
@@ -182,7 +181,7 @@ header {
     position: absolute;
     top: 10px;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: #ffffff;
     transition-duration: .25s;
   }
@@ -231,9 +230,10 @@ header {
   }
 
   .p_burger {
-    font-size: 24px;
+    font-size: 20px;
     color: #4f405f;
-    font-weight: 400;
+    font-weight: 800;
+
     
   }
  
@@ -252,8 +252,8 @@ header {
   }
   .p_burger_phone {
     color: #4f405f;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 800;
     margin-bottom: 10px;
   }
   .p_burger_phone:hover {
@@ -300,8 +300,10 @@ footer {
     position: relative;
     height: auto;
     width: 100%;
+    padding-bottom: 10px;
     margin: auto;
     background-color: #000000;
+    
 }
 
 
@@ -317,7 +319,7 @@ footer {
 
 .container_footer_block {
     margin-top: 20px;
-    width: 300px;
+    width: 450px;
 }
 .border_footer {
     border-top: 4px solid #4f405f;
@@ -325,16 +327,26 @@ footer {
     margin-bottom: 40px;
 }
 .p_footer {
-    color: #e7e7e7;
-    font-size: 16px;
-    font-weight: 200;
-    line-height: 20px;
+    color: #dbdbdb;
+    font-size: 18px;
+    font-weight: 400;
 }
 .p_footer_contact {
-    color: #e7e7e7;
-    font-size: 14px;
-    font-weight: 500;
-    
+    color: #dbdbdb;
+    font-size: 18px;
+    font-weight: 400;
+}
+.p_footer_contact_phone {
+  font-size: 18px;
+  font-weight: 400;
+  color: #dbdbdb;
+  transform: 0.3s;
+  transition: 0.3s;
+}
+.p_footer_contact_phone:hover {
+  color: #ffffff;
+  transform: 0.3s;
+  transition: 0.3s;
 }
 .flex_footer {
     display: flex;
@@ -349,17 +361,37 @@ footer {
 }
 
 /* ИП */
+.cont_ip {
+  position: relative;
+}
 .p_ip {
-    font-size: 14px;
-    font-weight: 100;
-    color: #e7e7e7;
-    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(165, 165, 165);
+}
+.p_document {
+  font-size: 14px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  color: #a1a1a1;
+  border-bottom: 1px solid #a1a1a1;
+  transition: 0.3s;
+  transform: 0.3s;
+}
+.p_document:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  transform: 0.3s;
+  transition: 0.3s;
 }
 
 
-
-
-
+.h2_text_footer {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
 
 
 
@@ -398,6 +430,8 @@ footer {
 }
 .callback-bt_cont:hover+.popover_footer{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .popover_footer {
     position: absolute;
@@ -407,9 +441,10 @@ footer {
     border-radius: 10px;
     right: 90px;
     bottom: 0;
-    width: 200px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
     z-index: 1;
+    color: #4f405f;
     background-color: white;
 }
 .p_popover {
@@ -550,163 +585,50 @@ footer {
 /* конец кнопки звонка */
 
 
-/* Базовые стили слоя затемнения и модального окна  */
-.overlay {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    visibility: hidden;
-    /* фон затемнения */
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    position: fixed; /* фиксированное поцизионирование */
-    cursor: default; /* тип курсара */
-    -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
-    transition: opacity .5s;
-    }
-    .overlay:target {
-    visibility: visible;
-    opacity: 1;
-    }
-    
-    /*** Формируем стили модального окна ***/
-    .popup {
-    top: 0;
-    right: 0;
-    left: 0;
-    font-size: 16px;
-    z-index: 10;
-    display: block;
-    visibility: hidden;
-    margin: 0 auto;
-    width: 90%;
-    height: 450px;
-    min-width: 320px;
-    max-width: 400px;
-    /* фиксированное позиционирование, окно стабильно при прокрутке */
-    position: fixed;
-    padding: 15px;
-    /* скругление углов */
-    border-radius: 5px;
-    background-color: #303030;
-    /* внешняя тень блока */
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
-    -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
-    -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
-    /* полная прозрачность окна, появление при клике */
-    opacity: 0;
-    /* эффект перехода (появление) */
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    -ms-transition: all ease .5s;
-    -o-transition: all ease .5s;
-    transition: all ease .5s;
-    }
-    /* активируем появление окна и затемнение фона */
-    .overlay:target+.popup {
-    top: 20%; /* положение окна от верха страницы при появлении */
-    visibility: visible;
-    opacity: 1; /* убираем прозрачность */
-    }
-    /* формируем кнопку закрытия */
-    .close {
-    position: absolute;
-    top: 15px;
-    right: -16px;
-    }
-    .cl-btn-2 {
-      display: flex;
-      justify-content: center;
-  }
-  .cl-btn-2 div {
-      cursor: pointer;
-      position: relative;  
-      height: 20px;
-      width: 50px;
-  }
-  .cl-btn-2 .leftright {
-      height: 4px;
-      width: 30px;
-      position: absolute;
-      background-color: #ffffff;
-      transform: rotate(45deg);
-  }
-  .cl-btn-2 .rightleft {
-      height: 4px;
-      width: 30px;
-      position: absolute;
-      background-color: #ffffff;
-      transform: rotate(-45deg);
-  }
 
-  
-   
- .form_flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
- }
-   
-    .p_call {
-        text-align: center;
-        vertical-align: middle;
-        font-weight: 400;
-        font-size: 30px;
-        color: white;
-    }
-    .p_call1 {
-      text-align: center;
-      vertical-align: middle;
-      margin-top: 20px;
-      font-weight: 400;
-      font-size: 18px;
-      color: white;
-      line-height: 24px;
-    }
  
 
     /* button */
     
              
+   
+   
     .btn-grad {
       background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
-      padding: 18px 55px;
-      text-align: center;
+      padding: 10px 30px;
+      text-align: right center;
+      font-family: "Nunito";
       cursor: pointer;
-      text-transform: uppercase;
-      font-size: 18px;
-      font-weight: 400;
+      font-size: 20px;
+      font-weight: 600;
       transition: 0.5s;
       background-size: 200% auto;
       color: white;            
-      border-radius: 10px;
+      border-radius: 5px;
       border: none;
       display: block;
     }
 
     .btn-grad:hover {
-      background-position: right center; /* change the direction of the change here */
+      background-position: center; /* change the direction of the change here */
       color: #fff;
       text-decoration: none;
     }
-   
-
+    @media (max-width:500px) {
+      .btn-grad {
+        font-size: 16px;
+      }
+    }
   /* Строка ввода */
+  
   .conteiner_input_item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 40px;
-      
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    
+}
   
     .input_item {
       outline: none;
@@ -727,7 +649,7 @@ footer {
     min-width: 300px;
     max-width: 600px;
     height: 60px;
-    color: #fe6637;
+    color: #614385;
     background-color: #202020;
     border-radius: 5px;
     text-align: center;
@@ -760,7 +682,7 @@ footer {
     margin: 10% auto;
     width: 500px;
     height: 720px;
-    border: 1px solid #fe6637;
+    border: 1px solid #614385;
     border-radius: 25px;
     /* скругление углов */
     background-color: #131313ce;
@@ -848,13 +770,11 @@ footer {
         width: 1200px;
         height: 70px;
     }
-    .igmp_logo {
-        width: 73px;
-        height: 61.5px;
-    }
-    .h1_text {
-        font-size: 30px;
-    }
+    .a_logo {
+      width: 73px;
+      height: 61.5px;
+  }
+   
     .p_phone {
         margin-right: 100px;
     }
@@ -874,7 +794,7 @@ footer {
     
     .container_footer_block {
         margin-top: 10px;
-        width: 300px;
+        width: 350px;
     }
     .border_footer {
         margin-bottom: 20px;
@@ -886,9 +806,7 @@ footer {
     .container_header {
         width: 800px;
     }
-    .h1_text {
-        font-size: 25px;
-    }
+  
     .p_phone {
         margin-right: 55px;
     }
@@ -902,7 +820,7 @@ footer {
       }
        /* Подвал */
     .container_footer {
-        gap: 10px;
+        gap: 40px;
         width: 750px;
     }
     .container_footer_block {
@@ -918,27 +836,26 @@ footer {
         width: 500px;
     }
     .h1_text {
-        display: none;
-    }
-    .igmp_logo {
-        width: 68px;
-        height: 57px;
+        font-size: 14px;
         margin-right: 5px;
+
+    }
+    .a_logo {
+      width: 68px;
+      height: 57px;
     }
     .p_phone {
-        margin-right: 60px;
+        margin-right: 40px;
     }
     .a_phone {
-        font-size: 17px;
+        font-size: 14px;
     }
     /* Кнопка бокового меню */
     .menu__btn {
         top: 23px;
         right: 12px;
       }
-      .p_burger_phone {
-        font-size: 16px;
-      }
+      
       .svg_burger_iphone {
         width: 30px;
         height: 30px;
@@ -956,9 +873,7 @@ footer {
       .menu__item {
         padding: 10px 10px;
       }
-      .p_burger  { 
-        font-size: 14px;
-      }
+     
       /* Подвал */
     .container_footer {
       gap: 10px;
@@ -981,25 +896,68 @@ footer {
 @media (max-width:500px) {
     /* Шапка */
     .container_header {
-        width: 400px;
+        width: 100%;
+        padding: 0 10px 0 10px;
     }
-   
+    .menu__btn {
+      top: 24px;
+    }
+    .h1_text {
+      position: absolute;
+      bottom: 5px;
+      right: 15%;
+      font-size: 14px;
+  }
+  
+  .p_phone {
+    position: absolute;
+    margin: 0px;
+    display: inline;
+    right: 15%;
+    top: 21px;
+  }
+  .a_phone {
+    font-size: 16px;
+  }
+  .p_burger_phone .p_burger{
+    font-size: 16px;
+  }
+ /* Подвал */
+  .p_footer  {
+    font-size: 14px;
+  }
+  .p_footer_contact {
+    font-size: 14px;
+  } 
+  .p_footer_contact_phone {
+    font-size: 14px;
+  }
+  .cont_ip {
+    height: 150px;
+  }
+  .p_ip {
+    position: absolute;
+    top: 0;
+    left: -38px;
+    transform: scale(0.833);/*10/12=0.833, font-size:10px*/
+  }
+  .p_document {
+    transform: scale(0.833);/*10/12=0.833, font-size:10px*/
+  }
+  .h2_text_footer {
+    font-size: 16px;
+    
 }
-@media (max-width:400px) {
+}
+@media (max-width:340px) {
     /* Шапка */
-    .container_header {
-        width: 360px;
-    }
     .a_phone {
-        font-size: 14px;
+      font-size: 12px;
     }
-}
-
-@media (max-width:360px) {
-    /* Шапка */
-    .container_header {
-        width: 320px;
+    .h1_text {
+      font-size: 12px;
     }
+    
 }
 
 

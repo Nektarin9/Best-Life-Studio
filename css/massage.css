@@ -20,7 +20,7 @@ flex-grow: 0;
     margin: auto;
     display: flex;
     justify-content: center;
-    padding-top: 250px;
+    padding-top: 155px;
     gap: 30px;
 }
 .block_price {
@@ -42,9 +42,10 @@ flex-grow: 0;
 .button_price, .button_price_minutes {
     width: 180px;
     height: 50px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Nunito";
+    color: #4f405f;
     border: solid 1px #4f405f;
     cursor:pointer;
     transition: 0.4s;
@@ -66,9 +67,9 @@ flex-grow: 0;
 
 
   .h2_text {
-    font-size: 24px;
-    font-weight: 400;
-    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 800;
+    color: #4f405f;
     margin-bottom: 10px;
     
 
@@ -90,18 +91,20 @@ flex-grow: 0;
 .first_training {
     font-size: 18px;
     font-weight: 400;
+    color: #4f405f;
 }
 .price {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
+    color: #4f405f;
 }
 
  /* Блок с абонементами */
  .h2_text2 {
     text-align: center;
-    font-size: 24px;
-    font-weight: 400;
-    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4f405f;
     margin: 10px 0 10px 0;
  }
  
@@ -117,44 +120,52 @@ flex-grow: 0;
     position: relative;
 }
 .span_old_price {
-    position: absolute;
-    top: 12px;
-    width: 100%;
-    border-top: 2px solid #727171;
+  position: absolute;
+  top: 11px;
+  width: 100%;
+  border-top: 2px solid #4f405f;
 
 }
 .old_price {
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
-    color: #727171;
+    color: #4f405f;
 }
 .price2 {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
+    color: #4f405f;
 }
 .span_dash {
-    position: absolute;
-    top: -8px;
-    left: -35px;
-    font-size: 50px;
-    font-weight: 100;
-    color: #727171;
+  position: absolute;
+  top: -18px;
+  left: -35px;
+  font-size: 60px;
+  font-weight: 100;
+  color:#4f405f;
 }
 
 .p_number_subscription {
     line-height: 24px;
     font-size: 18px;
     font-weight: 400;
+    color: #4f405f;
 }
 .p_duration {
     line-height: 24px;
     font-size: 18px;
     font-weight: 400;
-    color: #727171;
+    color: #4f405f;
 }
-
+.h2_text3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  color:#4f405f;
+  margin: 5px 0 5px 0;
+}
 /* Блок с тренерами */
 .container_person {
   display: flex;
@@ -189,11 +200,12 @@ flex-grow: 0;
   padding-bottom: 2px;
   padding-right: 10px;
   border-radius: 5px;
-  font-weight: 400;
+  font-family: "Nunito";
+  font-weight: 600;
   text-align: left;
   color: #ffffff;
   background-color: #000000;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 
@@ -231,6 +243,7 @@ flex-grow: 0;
   margin: 0 auto;
 }
 .h2_modal {
+  font-family: "Nunito";
   color: white;
   font-size: 24px;
   font-weight: 600;
@@ -238,6 +251,7 @@ flex-grow: 0;
   line-height: 32px;
 }
 .h3_modal {
+  font-family: "Nunito";
   color: white;
   font-size: 20px;
   line-height: 26px;
@@ -247,6 +261,7 @@ flex-grow: 0;
 
 }
 .p_modal {
+  font-family: "Nunito";
   text-indent: 25px;
   color: white;
   font-size: 18px;
@@ -351,27 +366,6 @@ flex-grow: 0;
       padding: 4px;
       line-height: 20px;
     }
-    .h2_text {
-      font-size: 20px;
-  }
-
-  .first_training {
-      font-size: 16px;
-  }
-  .price {
-      font-size: 20px;
-  }
-
-  /* Блок с абонементами */
-  .h2_text2 {
-      font-size: 20px;
-  }
-  .old_price {
-      font-size: 18px;
-  }
-  .price2 {
-      font-size: 20px;
-  }
 
   .span_old_price {
     top: 10px;
@@ -418,11 +412,15 @@ flex-grow: 0;
   .h2_text {
     line-height: 28px;
 }
-  
+  /* Кнопки */
+  .button_container {
+    gap: 10px;
+}
   .button_price, .button_price_minutes {
       width: 30%;
       height: 50px;
       font-size: 16px;
+      border-radius: 5px;
     }
 
   /* Блок с абонементами */
@@ -431,18 +429,46 @@ flex-grow: 0;
     gap: 20px;
   }
   .span_dash {
-    top: -2px;
-    left: -17px;
-    font-size: 40px;
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    font-size: 60px;
+    font-weight: 100;
+    color:#4f405f;
   }
+  
   .p_number_subscription {
     line-height: 24px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
   }
   .p_duration {
     line-height: 24px;
+    font-size: 14px;
+  }
+  .h2_text {
     font-size: 16px;
+  }
+  .h2_text3 {
+    font-size: 16px;
+  }
+
+  .first_training {
+      font-size: 14px;
+  }
+  .price {
+      font-size: 16px;
+  }
+
+  /* Блок с абонементами */
+  .h2_text2 {
+      font-size: 16px;
+  }
+  .old_price {
+      font-size: 18px;
+  }
+  .price2 {
+      font-size: 20px;
   }
   .container_button_person {
     margin: 0px 0px 0px 0px;
@@ -452,9 +478,9 @@ flex-grow: 0;
   }
   .p_name {
     position: absolute;
-    margin-top: 50px;
-    font-size: 18px;
+    font-size: 16px;
   }
+
   .container_person {
     gap: 20px;
   }

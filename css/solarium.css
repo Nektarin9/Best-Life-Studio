@@ -32,11 +32,10 @@ footer {
 }
 
   .h2_text {
-    font-size: 24px;
-    font-weight: 400;
-    color: #3d3d3d;
-    margin-bottom: 5px;
-    
+    font-size: 20px;
+    font-weight: 800;
+    color:#4f405f;
+    margin-bottom: 5px; 
 }
 
 .flex_p_price {
@@ -44,16 +43,18 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     margin: 10px 0 10px 0;
-    gap: 10px;
+    gap: 5px;
 
 }
 .first_training {
     font-size: 18px;
     font-weight: 400;
+    color: #4f405f;
 }
 .price {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
+    color: #4f405f;
 }
 .minutes {
   text-align: center;
@@ -67,9 +68,9 @@ footer {
  /* Блок с абонементами */
  .h2_text2 {
     text-align: center;
-    font-size: 24px;
-    font-weight: 400;
-    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 600;
+    color:#4f405f;
     margin: 5px 0 5px 0;
  }
  .button_container {
@@ -83,14 +84,15 @@ footer {
  .button_price, .button_price_minutes {
   width: 250px;
   height: 50px;
-  font-size: 22px;
-  font-weight: 400;
-  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4f405f;
   border: solid 1px #4f405f;
   cursor:pointer;
   transition: 0.4s;
   padding: 5px;
   line-height: 24px;
+  font-family: "Nunito";
 }
 
 
@@ -111,7 +113,7 @@ footer {
 
 
 
-/* Блок с тренерами */
+
 .container_person {
   display: flex;
   justify-content: center;
@@ -181,29 +183,30 @@ footer {
 }
 .span_old_price {
   position: absolute;
-  top: 12px;
+  top: 11px;
   width: 100%;
-  border-top: 2px solid #727171;
+  border-top: 2px solid #4f405f;
 
 }
 .old_price {
   text-align: center;
-  font-size: 22px;
-  font-weight: 600;
-  color: #727171;
+  font-size: 18px;
+  font-weight: 400;
+  color:#4f405f;
 }
 .price2 {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
+  color: #4f405f;
 }
 .span_dash {
   position: absolute;
-  top: -20px;
+  top: -28px;
   left: -35px;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 100;
-  color: #727171;
+  color:#4f405f;
 }
 
 
@@ -211,7 +214,7 @@ footer {
   line-height: 24px;
   font-size: 18px;
   font-weight: 400;
-  color: #727171;
+  color:#4f405f;
 }
 
 
@@ -231,6 +234,7 @@ footer {
   width: 60%;
   height: 550px;
   border: 2px solid #4f405f;
+  border-radius: 10px;
 }
 
 .swiper-slide img{
@@ -253,8 +257,16 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 50px;
+  background-color: #4f405fa1;
+  transition: 0.3s;
+}
+.swiper-button-left:hover {
+  transform: 0.3s;
   background-color: #4f405f;
-
+  box-shadow: none
+}
+.swiper-button-left:active{
+  background-color: #7c7a7e;
 }
 .swiper-button-right {
     position: absolute;
@@ -268,7 +280,16 @@ footer {
     align-items: center;
     justify-content: center;
 	  border-radius: 50px;
-    background-color: #4f405f;
+    background-color: #4f405fa1;
+    transition: 0.3s;
+}
+.swiper-button-right:hover {
+  transform: 0.3s;
+  background-color: #4f405f;
+  box-shadow: none
+}
+.swiper-button-right:active{
+  background-color: #7c7a7e;
 }
 
 .swiper_svg_left {
@@ -391,13 +412,9 @@ footer {
   .h2_text {
     font-size: 20px;
   }
-  .h2_text2 {
-    font-size: 20px;
-  }
+  
 
-  .first_training {
-      font-size: 16px;
-  }
+  
   .old_price {
     font-size: 18px;
 }
@@ -461,11 +478,28 @@ footer {
 }
 
 @media (max-width:500px) {
-  
+  .first_training {
+    font-size: 16px;
+  }
+  .h2_text2 {
+    font-size: 16px;
+  }
+  .h2_text {
+    font-size: 16px; 
+}
+  .p_duration {
+    font-size: 14px;
+  }
   .container_table_price {
     padding-top: 100px;
-    
   }
+  .price {
+    font-size: 16px;
+  }
+  .first_training {
+    font-size: 14px;
+  }
+
   .block_price {
       padding: 15px;
       width: 90%;
@@ -486,7 +520,7 @@ footer {
 .button_price {
   width: 48%;
   height: 40px;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 5px;
 }
 /* Блок макияжа и татуажа */
@@ -505,19 +539,16 @@ footer {
     gap: 20px;
   }
   .span_dash {
-    top: -15px;
+    top: -23px;
     left: -17px;
-    font-size: 40px;
+    font-size: 50px;
   }
   .p_number_subscription {
     line-height: 24px;
     font-size: 16px;
     font-weight: 400;
   }
-  .p_duration {
-    line-height: 24px;
-    font-size: 16px;
-  }
+
   .container_button_person {
     margin: 0px 0px 0px 0px;
     width: 130px;
