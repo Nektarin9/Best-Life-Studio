@@ -78,18 +78,6 @@ function body_hidden() {
         })
     }
 }
-function body_auto() {
-    for (let i = 0; i < modal.length; i++) {
-        close_modal[i].addEventListener("click", event => {
-            body.style.overflow = "auto"
-        })
-        overlay_person[i].addEventListener("click", event => {
-            body.style.overflow = "auto"
-        })
-    }
-}
-body_hidden()
-body_auto()
 
 // Слайдер
 const swiper = new Swiper('.swiper', {

@@ -142,7 +142,16 @@ header {
     transform: 0.5s;
 }
 /* Бургер меню*/
-
+.darken_background {
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.719);
+  position:fixed;
+  left:0;
+  top: 0;
+  width:100%;
+  height:100%;
+  z-index: 9;
+}
 #menu__toggle {
     opacity: 0;
   }
@@ -194,6 +203,7 @@ header {
     content: '';
     top: 8px;
   }
+  
   .menu__box {
     display: block;
     position: fixed;
@@ -584,15 +594,88 @@ footer {
 }
 /* конец кнопки звонка */
 
+/* Кнопка закрытия модального окна слайдер */
+.close2{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cl-btn-2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  position: relative;
+  background-color: #ffffffde;
+}
 
+.cl-btn-2::before, .cl-btn-2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #4f405f;
+}
+
+.cl-btn-2::before {
+  top: 45%;
+  left: 0;
+  right: 0;
+  transform: rotate(-45deg);
+}
+ 
+.cl-btn-2::after {
+  top: 45%;
+  left: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+/* Модальное окно о персонале */
+.close{
+  position: absolute;
+  top: 3px;
+  right: 5px;
+}
+.cl-btn-3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+.cl-btn-3::before, .cl-btn-3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+}
+.cl-btn-3::before {
+  top: 45%;
+  left: 0;
+  right: 0;
+  transform: rotate(-45deg);
+}
+ 
+.cl-btn-3::after {
+  top: 45%;
+  left: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+
+@media (max-width:500px) {
+  .cl-btn-2 {
+    width: 25px;
+    height: 25px;
+   
+  }
+}
 
  
 
     /* button */
     
-             
-   
-   
+
     .btn-grad {
       background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
       padding: 10px 30px;
@@ -630,48 +713,9 @@ footer {
     
 }
   
-    .input_item {
-      outline: none;
-      border: 0px;
-      width: 300px;
-      height: 45px;
-      color: #000000;
-      border-radius: 5px;
-      text-align: center;
-      font-weight: 400;
-      font-size: 35px;
-      transition: 0.4s;
-  }
-  .input_item1 {
-    outline: none;
-    border: 0px;
-    width: 100%;
-    min-width: 300px;
-    max-width: 600px;
-    height: 60px;
-    color: #614385;
-    background-color: #202020;
-    border-radius: 5px;
-    text-align: center;
-    font-family: sans-serif, Times, serif, Georgia;
-    font-weight: 800;
-    font-size: 35px;
-    transition: 0.4s;
-  }
-  .input_item:focus {
-    box-shadow: 0px 1px 2px 0px rgba(210, 168, 255, 0.7),
-            1px 2px 4px 0px rgba(210, 168, 255, 0.7),
-            2px 4px 8px 0px rgba(210, 168, 255, 0.7),
-            2px 4px 16px 0px rgba(210, 168, 255, 0.7);
-    transform: 0.4s;
-  }
-  .input_item1:focus {
-    box-shadow: 0px 1px 2px 0px rgba(210, 168, 255, 0.7),
-            1px 2px 4px 0px rgba(210, 168, 255, 0.7),
-            2px 4px 8px 0px rgba(210, 168, 255, 0.7),
-            2px 4px 16px 0px rgba(210, 168, 255, 0.7);
-    transform: 0.4s;
-  }
+ 
+  
+  
   
 
 

@@ -65,7 +65,7 @@ function block_price(i) {
             <div class="new_price_container">
                 <span class="span_dash">/</span>
                 <p class="p_number_subscription">${x.number[i]} тренировок</p>
-                <p class="p_duration">Длительность • 60 мин</p>
+                <p class="p_duration">Длительность • 90 мин</p>
             </div>
         </div>`
 }
