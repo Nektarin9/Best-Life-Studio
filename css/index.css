@@ -362,6 +362,9 @@ main {
 }
 
 @media (max-width:500px) {
+    .section_img {
+        max-height: 350px;
+    }
     /* О нас*/
     .about_us {
         width: 100%;

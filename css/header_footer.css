@@ -207,6 +207,7 @@ header {
   .menu__box {
     display: block;
     position: fixed;
+    z-index: 15;
     top: 0;
     right: -100%;
     width: 500px;

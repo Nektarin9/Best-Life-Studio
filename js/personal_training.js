@@ -4,7 +4,7 @@ const vip_checkbox = document.querySelector(".toggle-checkbox")
 // Кнопки
 const btn = document.querySelectorAll(".button_price")
 // Прайс первого сеанса
-const p_price = document.getElementById("price")
+const p_price = document.querySelectorAll(".price")
 // Блок с прайсом абонементов
 const block_subscription = document.getElementById("block_subscription")
 // Блок с командой
@@ -13,6 +13,7 @@ let img_person = document.querySelectorAll(".container_person > a")
 
 // Прайс
 const price = {
+    trial_training: "1000 ₽",
     first_training: "2500 ₽",
     number: [6, 8, 10 , 12],
     old_price_subscription: [15000, 20000, 25000, 30000],
@@ -20,6 +21,7 @@ const price = {
 }
 // VIP прайс
 const price_vip = {
+    trial_training: "1500 ₽",
     first_training: "3000 ₽",
     number: [6, 8, 10 , 12],
     old_price_subscription: [18000, 24000, 30000, 36000],
@@ -29,17 +31,19 @@ const price_vip = {
 let counter = 0
 
 
-
 // Логика чекбокса
 function checkbox() {
     vip_checkbox.addEventListener("change", event => {
-        p_price.textContent = price_vip.first_training
+        p_price[0].textContent = price_vip.trial_training
+        p_price[1].textContent = price_vip.first_training
         block_price(counter)
         person_block()
 
 
         if (vip_checkbox.checked === false) {
-            p_price.textContent = price.first_training
+            p_price[0].textContent = price.trial_training
+            p_price[1].textContent = price.first_training
+            
             block_price(counter)
             person_block()
 
