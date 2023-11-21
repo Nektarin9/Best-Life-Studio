@@ -82,14 +82,15 @@ function button() {
         })
     }
 }
-
-function person_block() {
-    if (vip_checkbox.checked === true) {
-        person.innerHTML = `<a href="#4">
+/*<a href="#4">
         <button style="background-image: url(../igmp/person4.svg);" class="container_button_person">
             <p class="p_name">Антон</p>
         </button>
     </a>
+*/
+function person_block() {
+    if (vip_checkbox.checked === true) {
+        person.innerHTML = `
     <a href="#5">
         <button style="background-image: url(../igmp/person5.svg);" class="container_button_person">
             <p class="p_name">Анастасия</p>

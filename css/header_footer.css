@@ -597,6 +597,7 @@ footer {
 
 /* Кнопка закрытия модального окна слайдер */
 .close2{
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
@@ -631,7 +632,8 @@ footer {
   transform: rotate(45deg);
 }
 /* Модальное окно о персонале */
-.close{
+.close {
+  cursor: pointer;
   position: absolute;
   top: 3px;
   right: 5px;
